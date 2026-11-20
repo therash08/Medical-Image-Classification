@@ -1,0 +1,16 @@
+# Virtual Environment
+.venv/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dataset
+bcn_20k_train/
+bcn_20k_test/
+
+# Generated Outputs
+outputs/
