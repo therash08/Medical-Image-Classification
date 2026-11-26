@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Main manuscript tables</title><style>
+body{font:15px/1.5 Georgia,serif;color:#18212b;max-width:1200px;margin:36px auto;padding:0 18px}h1{font-size:26px}h2{font-size:17px;margin:0 0 12px}section{margin:28px 0 36px}.scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}th,td{padding:7px 10px;text-align:left;vertical-align:top;border-bottom:1px solid #dbe0e6}th{border-top:2px solid #23354a;border-bottom:1.5px solid #23354a;background:#eef2f6}tbody tr:last-child td{border-bottom:2px solid #23354a}tbody tr:nth-child(even){background:#f7f9fb}.note{font-size:13px;color:#414c57;margin-top:9px}thead{display:table-header-group}@media print{body{margin:0;max-width:none}section{break-inside:auto}tr{break-inside:avoid}h2{break-after:avoid}.scroll{overflow:visible}}</style></head><body><h1>Main manuscript tables</h1><p>Reserved results are from the structurally audited same-dataset snapshot; historical split integrity and historical nonaccess were not established. No external validation or test-based selection.</p>
+<section><h2>Table 1. BCN20000 study partitions</h2>
+<div class="scroll"><table><thead><tr><th scope="col">Partition</th><th scope="col">Images</th><th scope="col">Leakage groups</th></tr></thead><tbody><tr><td>Development</td><td>7,813</td><td>2,286</td></tr>
+<tr><td>Original validation (excluded)</td><td>1,973</td><td>571</td></tr>
+<tr><td>Reserved test</td><td>2,578</td><td>715</td></tr>
+<tr><td>Total</td><td>12,364</td><td>3,572</td></tr>
+</tbody></table></div>
+<p class="note">Partition counts from Cell 111 V2. Development used five group-aware folds. Reserved results are from the structurally audited same-dataset snapshot; historical split integrity and historical nonaccess were not established. No external validation or test-based selection.</p></section>
+<section><h2>Table 2. Reserved-test class distribution</h2>
+<div class="scroll"><table><thead><tr><th scope="col">Class</th><th scope="col">Images</th><th scope="col">Groups</th><th scope="col">Image share (%)</th></tr></thead><tbody><tr><td>AK</td><td>129</td><td>48</td><td>5.00</td></tr>
+<tr><td>BCC</td><td>580</td><td>196</td><td>22.50</td></tr>
+<tr><td>BKL</td><td>241</td><td>70</td><td>9.35</td></tr>
+<tr><td>DF</td><td>29</td><td>8</td><td>1.12</td></tr>
+<tr><td>MEL</td><td>632</td><td>105</td><td>24.52</td></tr>
+<tr><td>NV</td><td>842</td><td>255</td><td>32.66</td></tr>
+<tr><td>SCC</td><td>94</td><td>25</td><td>3.65</td></tr>
+<tr><td>VASC</td><td>31</td><td>8</td><td>1.20</td></tr>
+</tbody></table></div>
+<p class="note">Image counts and group counts are different units; the reserved test has 2,578 images and 715 leakage groups.</p></section>
+<section><h2>Table 3. Controlled architectural comparison</h2>
+<div class="scroll"><table><thead><tr><th scope="col">Arm</th><th scope="col">Architecture</th><th scope="col">Clinical inputs</th><th scope="col">GATv2</th><th scope="col">Adaptive mechanism</th><th scope="col">Head parameters</th></tr></thead><tbody><tr><td>H0</td><td>Image-only</td><td>No</td><td>No</td><td>No</td><td>126,856</td></tr>
+<tr><td>H1</td><td>Non-graph multimodal</td><td>Yes</td><td>No</td><td>No</td><td>195,665</td></tr>
+<tr><td>H2</td><td>Non-adaptive GATv2</td><td>Yes</td><td>Yes</td><td>No</td><td>195,665</td></tr>
+<tr><td>H3</td><td>Adaptive GATv2 (proposed)</td><td>Yes</td><td>Yes</td><td>Yes</td><td>195,665</td></tr>
+<tr><td>H4</td><td>Adaptive non-graph control</td><td>Yes</td><td>No</td><td>Yes</td><td>195,665</td></tr>
+</tbody></table></div>
+<p class="note">All arms use the frozen 1,440-dimensional Swin-T feature representation and the same four-epoch final training budget. Counts are trainable head parameters, not full-backbone counts.</p></section>
+<section><h2>Table 4. Grouped five-fold out-of-fold development performance</h2>
+<div class="scroll"><table><thead><tr><th scope="col">Arm</th><th scope="col">Accuracy (%)</th><th scope="col">Macro-F1 (%)</th><th scope="col">Balanced acc. (%)</th><th scope="col">Fold Macro-F1 mean (%)</th><th scope="col">Fold SD (pp)</th></tr></thead><tbody><tr><td>H0</td><td>55.80</td><td>37.38</td><td>37.93</td><td>36.81</td><td>4.05</td></tr>
+<tr><td>H1</td><td>56.87</td><td>37.34</td><td>37.15</td><td>37.34</td><td>4.47</td></tr>
+<tr><td>H2</td><td>57.12</td><td>38.41</td><td>38.75</td><td>37.87</td><td>3.77</td></tr>
+<tr><td>H3</td><td>57.03</td><td>37.73</td><td>38.24</td><td>37.57</td><td>3.24</td></tr>
+<tr><td>H4</td><td>56.87</td><td>36.37</td><td>36.63</td><td>36.13</td><td>2.82</td></tr>
+</tbody></table></div>
+<p class="note">Pooled OOF metrics from 7,813 development images in 2,286 groups. Fold mean and sample SD are separate from pooled Macro-F1. Development results are not reserved-test results.</p></section>
+<section><h2>Table 5. Reserved-test performance under natural metadata availability</h2>
+<div class="scroll"><table><thead><tr><th scope="col">Arm</th><th scope="col">Accuracy (%)</th><th scope="col">Macro-F1 (%)</th><th scope="col">Balanced acc. (%)</th><th scope="col">Macro ROC-AUC</th><th scope="col">MEL recall (%)</th><th scope="col">SCC recall (%)</th></tr></thead><tbody><tr><td>H0</td><td>58.81</td><td>40.59</td><td>41.98</td><td>0.8487</td><td>62.50</td><td>36.17</td></tr>
+<tr><td>H1</td><td>60.43</td><td>40.30</td><td>41.02</td><td>0.8568</td><td>64.87</td><td>36.17</td></tr>
+<tr><td>H2</td><td>61.09</td><td>40.07</td><td>40.81</td><td>0.8566</td><td>65.35</td><td>38.30</td></tr>
+<tr><td>H3</td><td>61.79</td><td>41.65</td><td>43.11</td><td>0.8593</td><td>68.99</td><td>46.81</td></tr>
+<tr><td>H4</td><td>60.98</td><td>41.71</td><td>43.23</td><td>0.8579</td><td>68.99</td><td>42.55</td></tr>
+</tbody></table></div>
+<p class="note">Macro ROC-AUC is one-vs-rest on a 0–1 scale. H3 is the proposed arm, not a test-selected winner. Reserved results are from the structurally audited same-dataset snapshot; historical split integrity and historical nonaccess were not established. No external validation or test-based selection.</p></section>
+<section><h2>Table 6. Natural-condition performance with paired group-bootstrap uncertainty</h2>
+<div class="scroll"><table><thead><tr><th scope="col">Arm</th><th scope="col">Accuracy (%)</th><th scope="col">95% CI</th><th scope="col">Macro-F1 (%)</th><th scope="col">95% CI</th></tr></thead><tbody><tr><td>H0</td><td>58.81</td><td>[55.50, 62.02]</td><td>40.59</td><td>[36.78, 44.68]</td></tr>
+<tr><td>H1</td><td>60.43</td><td>[57.08, 63.67]</td><td>40.30</td><td>[36.39, 44.32]</td></tr>
+<tr><td>H2</td><td>61.09</td><td>[57.80, 64.30]</td><td>40.07</td><td>[36.58, 43.64]</td></tr>
+<tr><td>H3</td><td>61.79</td><td>[58.47, 65.02]</td><td>41.65</td><td>[37.71, 45.75]</td></tr>
+<tr><td>H4</td><td>60.98</td><td>[57.68, 64.19]</td><td>41.71</td><td>[37.61, 45.93]</td></tr>
+</tbody></table></div>
+<p class="note">Descriptive 95% percentile intervals, 10,000 saved class-stratified group-bootstrap draws. These are not the multiplicity-adjusted primary contrast intervals.</p></section>
+<section><h2>Table 7. Proposed H3: per-class reserved-test performance</h2>
+<div class="scroll"><table><thead><tr><th scope="col">Class</th><th scope="col">Images</th><th scope="col">Precision (%)</th><th scope="col">Recall (%)</th><th scope="col">Specificity (%)</th><th scope="col">F1 (%)</th><th scope="col">ROC-AUC</th></tr></thead><tbody><tr><td>AK</td><td>129</td><td>27.61</td><td>28.68</td><td>96.04</td><td>28.14</td><td>0.8591</td></tr>
+<tr><td>BCC</td><td>580</td><td>69.08</td><td>62.41</td><td>91.89</td><td>65.58</td><td>0.9040</td></tr>
+<tr><td>BKL</td><td>241</td><td>36.79</td><td>29.46</td><td>94.78</td><td>32.72</td><td>0.7764</td></tr>
+<tr><td>DF</td><td>29</td><td>11.36</td><td>17.24</td><td>98.47</td><td>13.70</td><td>0.7893</td></tr>
+<tr><td>MEL</td><td>632</td><td>70.66</td><td>68.99</td><td>90.70</td><td>69.82</td><td>0.8822</td></tr>
+<tr><td>NV</td><td>842</td><td>72.59</td><td>75.18</td><td>86.23</td><td>73.86</td><td>0.9019</td></tr>
+<tr><td>SCC</td><td>94</td><td>29.33</td><td>46.81</td><td>95.73</td><td>36.07</td><td>0.8814</td></tr>
+<tr><td>VASC</td><td>31</td><td>11.36</td><td>16.13</td><td>98.47</td><td>13.33</td><td>0.8797</td></tr>
+</tbody></table></div>
+<p class="note">Sensitivity equals recall. AUC is one-vs-rest (0–1). Point estimates only; small class supports limit interpretation.</p></section>
+<section><h2>Table 8. Missing-metadata stress-test performance</h2>
+<div class="scroll"><table><thead><tr><th scope="col">Arm</th><th scope="col">Natural F1 (%)</th><th scope="col">Worst F1 (%)</th><th scope="col">Worst drop (pp)</th><th scope="col">All-missing F1 (%)</th></tr></thead><tbody><tr><td>H1</td><td>40.30</td><td>37.77</td><td>2.52</td><td>37.83</td></tr>
+<tr><td>H2</td><td>40.07</td><td>37.32</td><td>2.76</td><td>37.32</td></tr>
+<tr><td>H3</td><td>41.65</td><td>39.24</td><td>2.41</td><td>39.24</td></tr>
+<tr><td>H4</td><td>41.71</td><td>39.62</td><td>2.09</td><td>40.29</td></tr>
+</tbody></table></div>
+<p class="note">Worst is the minimum over natural plus seven forced-removal scenarios (M00–M07). Smaller degradation is better; larger absolute F1 is better. H0 is image-only and does not require metadata stress testing.</p></section>
+<section><h2>Table 9. Predeclared primary contrasts with Bonferroni-adjusted confidence intervals</h2>
+<div class="scroll"><table><thead><tr><th scope="col">Contrast</th><th scope="col">Endpoint</th><th scope="col">Difference (pp)</th><th scope="col">98.33% CI (pp)</th><th scope="col">Positive lower bound</th></tr></thead><tbody><tr><td>H1-H0</td><td>Natural Macro-F1</td><td>-0.29</td><td>[-3.19, +2.42]</td><td>No</td></tr>
+<tr><td>H3-H2</td><td>Worst-case Macro-F1</td><td>+1.92</td><td>[-0.48, +4.95]</td><td>No</td></tr>
+<tr><td>H3-H4</td><td>Worst-case Macro-F1</td><td>-0.38</td><td>[-1.59, +0.85]</td><td>No</td></tr>
+</tbody></table></div>
+<p class="note">10,000 paired class-stratified group-bootstrap draws. Worst-case endpoint recomputed within each draw. None of the three primary superiority criteria was met; this does not establish equivalence.</p></section>
+<section><h2>Table 10. Exploratory image-occlusion faithfulness on development examples</h2>
+<div class="scroll"><table><thead><tr><th scope="col">Intervention</th><th scope="col">Cases</th><th scope="col">Mean target-logit drop</th><th scope="col">Top &gt; comparator (cases)</th></tr></thead><tbody><tr><td>Top-ranked 4 tiles</td><td>16</td><td>1.7371</td><td>N/A</td></tr>
+<tr><td>Fixed random 4 tiles</td><td>16</td><td>0.6187</td><td>15</td></tr>
+<tr><td>Bottom-ranked 4 tiles</td><td>16</td><td>-0.2007</td><td>16</td></tr>
+</tbody></table></div>
+<p class="note">Sixteen class-stratified training examples, one per group. Positive drop means the original predicted-class logit decreased after deletion. This is not independent clinical explanation validation.</p></section>
+<section><h2>Table 11. Exploratory metadata-removal analysis on development examples</h2>
+<div class="scroll"><table><thead><tr><th scope="col">Removed clinical information</th><th scope="col">Changed cases</th><th scope="col">Mean target-logit drop</th></tr></thead><tbody><tr><td>Age</td><td>16</td><td>0.9721</td></tr>
+<tr><td>Sex</td><td>16</td><td>0.8469</td></tr>
+<tr><td>Anatomical site</td><td>16</td><td>1.0929</td></tr>
+<tr><td>All three fields</td><td>16</td><td>2.4583</td></tr>
+</tbody></table></div>
+<p class="note">Means are over cases whose observation changed, not necessarily all 16 examples. Interventions are model perturbations, not causal clinical evidence.</p></section>
+<section><h2>Table 12. Clinical metadata availability in the reserved test</h2>
+<div class="scroll"><table><thead><tr><th scope="col">Field</th><th scope="col">Observed images</th><th scope="col">Missing images</th><th scope="col">Observed (%)</th></tr></thead><tbody><tr><td>Age</td><td>2,558</td><td>20</td><td>99.22</td></tr>
+<tr><td>Sex</td><td>2,558</td><td>20</td><td>99.22</td></tr>
+<tr><td>Anatomical site</td><td>2,551</td><td>27</td><td>98.95</td></tr>
+</tbody></table></div>
+<p class="note">Observed counts are field-specific; overlapping missingness is possible. Availability at prospective clinical prediction time was not validated.</p></section>
+<section><h2>Table 13. Uncalibrated probability performance under natural metadata availability</h2>
+<div class="scroll"><table><thead><tr><th scope="col">Arm</th><th scope="col">ECE (15 bins)</th><th scope="col">Multiclass Brier sum</th><th scope="col">Negative log-likelihood</th></tr></thead><tbody><tr><td>H0</td><td>0.0773</td><td>0.5465</td><td>1.1514</td></tr>
+<tr><td>H1</td><td>0.1161</td><td>0.5375</td><td>1.1461</td></tr>
+<tr><td>H2</td><td>0.1113</td><td>0.5348</td><td>1.1435</td></tr>
+<tr><td>H3</td><td>0.1180</td><td>0.5411</td><td>1.1750</td></tr>
+<tr><td>H4</td><td>0.1244</td><td>0.5451</td><td>1.1791</td></tr>
+</tbody></table></div>
+<p class="note">Lower values are better. Point estimates from saved probabilities; no post-hoc calibration or threshold fitting.</p></section>
+</body></html>

@@ -1,0 +1,4 @@
+intervention,n,mean_target_logit_drop,top_greater_count
+bottom4,16,-0.20073328912258148,16
+fixed_random4,16,0.618655152618885,15
+top4,16,1.7370660603046417,

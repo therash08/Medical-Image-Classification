@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Grouped five-fold out-of-fold development performance}
+\label{tab:04-development-oof}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{llllll}
+\toprule
+\textbf{Arm} & \textbf{Accuracy (\%)} & \textbf{Macro-F1 (\%)} & \textbf{Balanced acc. (\%)} & \textbf{Fold Macro-F1 mean (\%)} & \textbf{Fold SD (pp)} \\
+\midrule
+H0 & 55.80 & 37.38 & 37.93 & 36.81 & 4.05 \\
+H1 & 56.87 & 37.34 & 37.15 & 37.34 & 4.47 \\
+H2 & 57.12 & 38.41 & 38.75 & 37.87 & 3.77 \\
+H3 & 57.03 & 37.73 & 38.24 & 37.57 & 3.24 \\
+H4 & 56.87 & 36.37 & 36.63 & 36.13 & 2.82 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\par\smallskip
+\begin{minipage}{\textwidth}\footnotesize Pooled OOF metrics from 7,813 development images in 2,286 groups. Fold mean and sample SD are separate from pooled Macro-F1. Development results are not reserved-test results.\end{minipage}
+\end{table*}

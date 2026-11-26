@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Exploratory metadata-removal analysis on development examples}
+\label{tab:11-xai-metadata}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lll}
+\toprule
+\textbf{Removed clinical information} & \textbf{Changed cases} & \textbf{Mean target-logit drop} \\
+\midrule
+Age & 16 & 0.9721 \\
+Sex & 16 & 0.8469 \\
+Anatomical site & 16 & 1.0929 \\
+All three fields & 16 & 2.4583 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\par\smallskip
+\begin{minipage}{\textwidth}\footnotesize Means are over cases whose observation changed, not necessarily all 16 examples. Interventions are model perturbations, not causal clinical evidence.\end{minipage}
+\end{table*}

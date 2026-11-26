@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Reserved-test performance under natural metadata availability}
+\label{tab:05-reserved-natural-performance}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lllllll}
+\toprule
+\textbf{Arm} & \textbf{Accuracy (\%)} & \textbf{Macro-F1 (\%)} & \textbf{Balanced acc. (\%)} & \textbf{Macro ROC-AUC} & \textbf{MEL recall (\%)} & \textbf{SCC recall (\%)} \\
+\midrule
+H0 & 58.81 & 40.59 & 41.98 & 0.8487 & 62.50 & 36.17 \\
+H1 & 60.43 & 40.30 & 41.02 & 0.8568 & 64.87 & 36.17 \\
+H2 & 61.09 & 40.07 & 40.81 & 0.8566 & 65.35 & 38.30 \\
+H3 & 61.79 & 41.65 & 43.11 & 0.8593 & 68.99 & 46.81 \\
+H4 & 60.98 & 41.71 & 43.23 & 0.8579 & 68.99 & 42.55 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\par\smallskip
+\begin{minipage}{\textwidth}\footnotesize Macro ROC-AUC is one-vs-rest on a 0--1 scale. H3 is the proposed arm, not a test-selected winner. Reserved results are from the structurally audited same-dataset snapshot; historical split integrity and historical nonaccess were not established. No external validation or test-based selection.\end{minipage}
+\end{table*}

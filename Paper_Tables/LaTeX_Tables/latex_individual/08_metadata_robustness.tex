@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Missing-metadata stress-test performance}
+\label{tab:08-metadata-robustness}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lllll}
+\toprule
+\textbf{Arm} & \textbf{Natural F1 (\%)} & \textbf{Worst F1 (\%)} & \textbf{Worst drop (pp)} & \textbf{All-missing F1 (\%)} \\
+\midrule
+H1 & 40.30 & 37.77 & 2.52 & 37.83 \\
+H2 & 40.07 & 37.32 & 2.76 & 37.32 \\
+H3 & 41.65 & 39.24 & 2.41 & 39.24 \\
+H4 & 41.71 & 39.62 & 2.09 & 40.29 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\par\smallskip
+\begin{minipage}{\textwidth}\footnotesize Worst is the minimum over natural plus seven forced-removal scenarios (M00--M07). Smaller degradation is better; larger absolute F1 is better. H0 is image-only and does not require metadata stress testing.\end{minipage}
+\end{table*}

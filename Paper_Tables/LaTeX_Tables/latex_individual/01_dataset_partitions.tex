@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{BCN20000 study partitions}
+\label{tab:01-dataset-partitions}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lll}
+\toprule
+\textbf{Partition} & \textbf{Images} & \textbf{Leakage groups} \\
+\midrule
+Development & 7,813 & 2,286 \\
+Original validation (excluded) & 1,973 & 571 \\
+Reserved test & 2,578 & 715 \\
+Total & 12,364 & 3,572 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\par\smallskip
+\begin{minipage}{\textwidth}\footnotesize Partition counts from Cell 111 V2. Development used five group-aware folds. Reserved results are from the structurally audited same-dataset snapshot; historical split integrity and historical nonaccess were not established. No external validation or test-based selection.\end{minipage}
+\end{table*}

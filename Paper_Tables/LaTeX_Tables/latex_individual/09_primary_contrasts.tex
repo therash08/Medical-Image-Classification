@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Predeclared primary contrasts with Bonferroni-adjusted confidence intervals}
+\label{tab:09-primary-contrasts}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lllll}
+\toprule
+\textbf{Contrast} & \textbf{Endpoint} & \textbf{Difference (pp)} & \textbf{98.33\% CI (pp)} & \textbf{Positive lower bound} \\
+\midrule
+H1-H0 & Natural Macro-F1 & -0.29 & [-3.19, +2.42] & No \\
+H3-H2 & Worst-case Macro-F1 & +1.92 & [-0.48, +4.95] & No \\
+H3-H4 & Worst-case Macro-F1 & -0.38 & [-1.59, +0.85] & No \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\par\smallskip
+\begin{minipage}{\textwidth}\footnotesize 10,000 paired class-stratified group-bootstrap draws. Worst-case endpoint recomputed within each draw. None of the three primary superiority criteria was met; this does not establish equivalence.\end{minipage}
+\end{table*}

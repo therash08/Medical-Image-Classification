@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Supplementary saved-result tables</title><style>
+body{font:15px/1.5 Georgia,serif;color:#18212b;max-width:1200px;margin:36px auto;padding:0 18px}h1{font-size:26px}h2{font-size:17px;margin:0 0 12px}section{margin:28px 0 36px}.scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}th,td{padding:7px 10px;text-align:left;vertical-align:top;border-bottom:1px solid #dbe0e6}th{border-top:2px solid #23354a;border-bottom:1.5px solid #23354a;background:#eef2f6}tbody tr:last-child td{border-bottom:2px solid #23354a}tbody tr:nth-child(even){background:#f7f9fb}.note{font-size:13px;color:#414c57;margin-top:9px}thead{display:table-header-group}@media print{body{margin:0;max-width:none}section{break-inside:auto}tr{break-inside:avoid}h2{break-after:avoid}.scroll{overflow:visible}}</style></head><body><h1>Supplementary saved-result tables</h1><p>Reserved results are from the structurally audited same-dataset snapshot; historical split integrity and historical nonaccess were not established. No external validation or test-based selection.</p>
+<section><h2>Table S 1. Reserved natural</h2>
+<div class="scroll"><table><thead><tr><th scope="col">arm</th><th scope="col">architecture</th><th scope="col">accuracy</th><th scope="col">balanced_accuracy</th><th scope="col">equal_group_weighted_macro_f1</th><th scope="col">macro_f1</th><th scope="col">mel_recall</th><th scope="col">scc_recall</th><th scope="col">macro_ovr_roc_auc</th><th scope="col">ece_15_equal_width_bins</th><th scope="col">multiclass_brier_sum</th><th scope="col">negative_log_likelihood</th></tr></thead><tbody><tr><td>H0</td><td>Image-only</td><td>0.5880527540729248</td><td>0.41978943334708896</td><td>0.40390465648507173</td><td>0.4058776996469847</td><td>0.625</td><td>0.3617021276595745</td><td>0.8486965604062235</td><td>0.07729778670379382</td><td>0.5465291614765305</td><td>1.1513843297879631</td></tr>
+<tr><td>H1</td><td>Non-graph multimodal</td><td>0.604344453064391</td><td>0.4102311641027286</td><td>0.398657293411935</td><td>0.4029700152766552</td><td>0.6487341772151899</td><td>0.3617021276595745</td><td>0.856796468378581</td><td>0.11609089455030788</td><td>0.5375146314283684</td><td>1.14610103758388</td></tr>
+<tr><td>H2</td><td>Non-adaptive GATv2</td><td>0.6109387121799845</td><td>0.408113979242518</td><td>0.3934317227515052</td><td>0.4007334132486454</td><td>0.6534810126582279</td><td>0.3829787234042553</td><td>0.8565898681507154</td><td>0.11134862047404047</td><td>0.5347575594614945</td><td>1.1434557023852374</td></tr>
+<tr><td>H3</td><td>Adaptive GATv2 (investigational)</td><td>0.6179208688906129</td><td>0.43112619475776837</td><td>0.4081088250525946</td><td>0.4165139832393038</td><td>0.689873417721519</td><td>0.46808510638297873</td><td>0.859252303622364</td><td>0.11799506676343516</td><td>0.5411386250547158</td><td>1.1749808240602377</td></tr>
+<tr><td>H4</td><td>Adaptive non-graph control</td><td>0.6097750193948798</td><td>0.43232451236367375</td><td>0.4115228968257946</td><td>0.4171062169836671</td><td>0.689873417721519</td><td>0.425531914893617</td><td>0.8579038014779983</td><td>0.1244182183705153</td><td>0.5451473507495285</td><td>1.1791192619567366</td></tr>
+</tbody></table></div>
+<p class="note">Exact saved CSV fields and values (unrounded). Probability and classification rates are fractions unless the source field explicitly specifies another unit. Blank values are retained.</p></section>
+<section><h2>Table S 2. Reserved natural intervals</h2>
+<div class="scroll"><table><thead><tr><th scope="col">arm</th><th scope="col">metric</th><th scope="col">estimate</th><th scope="col">level</th><th scope="col">lower</th><th scope="col">replicates</th><th scope="col">upper</th></tr></thead><tbody><tr><td>H0</td><td>accuracy</td><td>0.5880527540729248</td><td>0.95</td><td>0.5550158246101062</td><td>10000</td><td>0.6201799440499831</td></tr>
+<tr><td>H0</td><td>balanced_accuracy</td><td>0.41978943334708896</td><td>0.95</td><td>0.3772945188983726</td><td>10000</td><td>0.474138518547616</td></tr>
+<tr><td>H0</td><td>equal_group_weighted_macro_f1</td><td>0.40390465648507173</td><td>0.95</td><td>0.3646284571783435</td><td>10000</td><td>0.4459793280704453</td></tr>
+<tr><td>H0</td><td>macro_f1</td><td>0.4058776996469847</td><td>0.95</td><td>0.3677980359729174</td><td>10000</td><td>0.4467796169368013</td></tr>
+<tr><td>H0</td><td>mel_recall</td><td>0.625</td><td>0.95</td><td>0.5407404197958791</td><td>10000</td><td>0.6993307566315116</td></tr>
+<tr><td>H0</td><td>scc_recall</td><td>0.3617021276595745</td><td>0.95</td><td>0.20719944082013053</td><td>10000</td><td>0.5384615384615384</td></tr>
+<tr><td>H1</td><td>accuracy</td><td>0.604344453064391</td><td>0.95</td><td>0.5708251305107658</td><td>10000</td><td>0.6367159767380727</td></tr>
+<tr><td>H1</td><td>balanced_accuracy</td><td>0.4102311641027286</td><td>0.95</td><td>0.36917394645345064</td><td>10000</td><td>0.45965752042066554</td></tr>
+<tr><td>H1</td><td>equal_group_weighted_macro_f1</td><td>0.398657293411935</td><td>0.95</td><td>0.3593078277505372</td><td>10000</td><td>0.4394345874818691</td></tr>
+<tr><td>H1</td><td>macro_f1</td><td>0.4029700152766552</td><td>0.95</td><td>0.3639038608276431</td><td>10000</td><td>0.443180624806495</td></tr>
+<tr><td>H1</td><td>mel_recall</td><td>0.6487341772151899</td><td>0.95</td><td>0.5632173534171542</td><td>10000</td><td>0.7267292902658756</td></tr>
+<tr><td>H1</td><td>scc_recall</td><td>0.3617021276595745</td><td>0.95</td><td>0.18823529411764706</td><td>10000</td><td>0.539486842105263</td></tr>
+<tr><td>H2</td><td>accuracy</td><td>0.6109387121799845</td><td>0.95</td><td>0.5780382352941176</td><td>10000</td><td>0.6430206169013492</td></tr>
+<tr><td>H2</td><td>balanced_accuracy</td><td>0.408113979242518</td><td>0.95</td><td>0.37101223104387665</td><td>10000</td><td>0.450290403492884</td></tr>
+<tr><td>H2</td><td>equal_group_weighted_macro_f1</td><td>0.3934317227515052</td><td>0.95</td><td>0.3587058300474151</td><td>10000</td><td>0.4295600916706351</td></tr>
+<tr><td>H2</td><td>macro_f1</td><td>0.4007334132486454</td><td>0.95</td><td>0.3658210409214717</td><td>10000</td><td>0.43642509568473475</td></tr>
+<tr><td>H2</td><td>mel_recall</td><td>0.6534810126582279</td><td>0.95</td><td>0.5689101148409894</td><td>10000</td><td>0.7286591274342976</td></tr>
+<tr><td>H2</td><td>scc_recall</td><td>0.3829787234042553</td><td>0.95</td><td>0.21275930851063835</td><td>10000</td><td>0.5568181818181818</td></tr>
+<tr><td>H3</td><td>accuracy</td><td>0.6179208688906129</td><td>0.95</td><td>0.5847072998558319</td><td>10000</td><td>0.6502338739650038</td></tr>
+<tr><td>H3</td><td>balanced_accuracy</td><td>0.43112619475776837</td><td>0.95</td><td>0.3878993040311217</td><td>10000</td><td>0.4830829247835686</td></tr>
+<tr><td>H3</td><td>equal_group_weighted_macro_f1</td><td>0.4081088250525946</td><td>0.95</td><td>0.37060998604935796</td><td>10000</td><td>0.4480375496506334</td></tr>
+<tr><td>H3</td><td>macro_f1</td><td>0.4165139832393038</td><td>0.95</td><td>0.3771467486501372</td><td>10000</td><td>0.45749484074474095</td></tr>
+<tr><td>H3</td><td>mel_recall</td><td>0.689873417721519</td><td>0.95</td><td>0.6068958936562253</td><td>10000</td><td>0.7628205128205128</td></tr>
+<tr><td>H3</td><td>scc_recall</td><td>0.46808510638297873</td><td>0.95</td><td>0.26595744680851063</td><td>10000</td><td>0.6666666666666666</td></tr>
+<tr><td>H4</td><td>accuracy</td><td>0.6097750193948798</td><td>0.95</td><td>0.5768279768274233</td><td>10000</td><td>0.6418868545423999</td></tr>
+<tr><td>H4</td><td>balanced_accuracy</td><td>0.43232451236367375</td><td>0.95</td><td>0.38559937765890023</td><td>10000</td><td>0.4891544840034722</td></tr>
+<tr><td>H4</td><td>equal_group_weighted_macro_f1</td><td>0.4115228968257946</td><td>0.95</td><td>0.3692652675343224</td><td>10000</td><td>0.4552976836103553</td></tr>
+<tr><td>H4</td><td>macro_f1</td><td>0.4171062169836671</td><td>0.95</td><td>0.37612011484649854</td><td>10000</td><td>0.4593068980135735</td></tr>
+<tr><td>H4</td><td>mel_recall</td><td>0.689873417721519</td><td>0.95</td><td>0.6089073430951865</td><td>10000</td><td>0.76155044803448</td></tr>
+<tr><td>H4</td><td>scc_recall</td><td>0.425531914893617</td><td>0.95</td><td>0.23583518312985585</td><td>10000</td><td>0.6140413533834586</td></tr>
+</tbody></table></div>
+<p class="note">Exact saved CSV fields and values (unrounded). Probability and classification rates are fractions unless the source field explicitly specifies another unit. Blank values are retained.</p></section>
+<section><h2>Table S 3. Reserved per class</h2>
+<div class="scroll"><table><thead><tr><th scope="col">arm</th><th scope="col">class</th><th scope="col">f1</th><th scope="col">group_support</th><th scope="col">precision</th><th scope="col">sensitivity</th><th scope="col">specificity</th><th scope="col">support</th><th scope="col">ovr_roc_auc</th></tr></thead><tbody><tr><td>H0</td><td>AK</td><td>0.2857142857142857</td><td>48</td><td>0.24581005586592178</td><td>0.34108527131782945</td><td>0.9448754593711719</td><td>129</td><td>0.8371016804834119</td></tr>
+<tr><td>H0</td><td>BCC</td><td>0.6377649325626205</td><td>196</td><td>0.722707423580786</td><td>0.5706896551724138</td><td>0.9364364364364365</td><td>580</td><td>0.9156432294363329</td></tr>
+<tr><td>H0</td><td>BKL</td><td>0.31809145129224653</td><td>70</td><td>0.3053435114503817</td><td>0.33195020746887965</td><td>0.922122379118528</td><td>241</td><td>0.7629794555206963</td></tr>
+<tr><td>H0</td><td>DF</td><td>0.07017543859649122</td><td>8</td><td>0.07142857142857142</td><td>0.06896551724137931</td><td>0.989799921537858</td><td>29</td><td>0.8231896213525249</td></tr>
+<tr><td>H0</td><td>MEL</td><td>0.656691604322527</td><td>105</td><td>0.691768826619965</td><td>0.625</td><td>0.9095580678314491</td><td>632</td><td>0.869114834714507</td></tr>
+<tr><td>H0</td><td>NV</td><td>0.7073588134626355</td><td>255</td><td>0.6805708013172338</td><td>0.7363420427553444</td><td>0.8323732718894009</td><td>842</td><td>0.8800085105684293</td></tr>
+<tr><td>H0</td><td>SCC</td><td>0.3148148148148148</td><td>25</td><td>0.2786885245901639</td><td>0.3617021276595745</td><td>0.964573268921095</td><td>94</td><td>0.8486911981361566</td></tr>
+<tr><td>H0</td><td>VASC</td><td>0.2564102564102564</td><td>8</td><td>0.2127659574468085</td><td>0.3225806451612903</td><td>0.9854731056144483</td><td>31</td><td>0.8528439530377293</td></tr>
+<tr><td>H1</td><td>AK</td><td>0.27722772277227725</td><td>48</td><td>0.2413793103448276</td><td>0.32558139534883723</td><td>0.9461004491629237</td><td>129</td><td>0.8542388761747399</td></tr>
+<tr><td>H1</td><td>BCC</td><td>0.6235186873290793</td><td>196</td><td>0.6615087040618955</td><td>0.5896551724137931</td><td>0.9124124124124124</td><td>580</td><td>0.9006817161989575</td></tr>
+<tr><td>H1</td><td>BKL</td><td>0.30248306997742663</td><td>70</td><td>0.3316831683168317</td><td>0.27800829875518673</td><td>0.9422336328626444</td><td>241</td><td>0.7856243685826244</td></tr>
+<tr><td>H1</td><td>DF</td><td>0.15625</td><td>8</td><td>0.14285714285714285</td><td>0.1724137931034483</td><td>0.9882306786975285</td><td>29</td><td>0.7717833903762125</td></tr>
+<tr><td>H1</td><td>MEL</td><td>0.6867671691792295</td><td>105</td><td>0.7295373665480427</td><td>0.6487341772151899</td><td>0.9218910585817061</td><td>632</td><td>0.8871858209634824</td></tr>
+<tr><td>H1</td><td>NV</td><td>0.7360720315137873</td><td>255</td><td>0.6994652406417112</td><td>0.7767220902612827</td><td>0.8381336405529954</td><td>842</td><td>0.9041042284663463</td></tr>
+<tr><td>H1</td><td>SCC</td><td>0.3333333333333333</td><td>25</td><td>0.3090909090909091</td><td>0.3617021276595745</td><td>0.9694041867954911</td><td>94</td><td>0.869539521019632</td></tr>
+<tr><td>H1</td><td>VASC</td><td>0.10810810810810811</td><td>8</td><td>0.09302325581395349</td><td>0.12903225806451613</td><td>0.9846878680800942</td><td>31</td><td>0.8812138252466533</td></tr>
+<tr><td>H2</td><td>AK</td><td>0.298932384341637</td><td>48</td><td>0.27631578947368424</td><td>0.32558139534883723</td><td>0.9550837076357697</td><td>129</td><td>0.8626207184707569</td></tr>
+<tr><td>H2</td><td>BCC</td><td>0.6409130816505707</td><td>196</td><td>0.6529516994633273</td><td>0.6293103448275862</td><td>0.9029029029029029</td><td>580</td><td>0.9003658831245039</td></tr>
+<tr><td>H2</td><td>BKL</td><td>0.3127962085308057</td><td>70</td><td>0.36464088397790057</td><td>0.27385892116182575</td><td>0.9507916131792897</td><td>241</td><td>0.7761324675924199</td></tr>
+<tr><td>H2</td><td>DF</td><td>0.09375</td><td>8</td><td>0.08571428571428572</td><td>0.10344827586206896</td><td>0.9874460572773637</td><td>29</td><td>0.7939421815181072</td></tr>
+<tr><td>H2</td><td>MEL</td><td>0.6912133891213389</td><td>105</td><td>0.7335701598579041</td><td>0.6534810126582279</td><td>0.9229188078108942</td><td>632</td><td>0.8872646909597095</td></tr>
+<tr><td>H2</td><td>NV</td><td>0.7340909090909091</td><td>255</td><td>0.7037037037037037</td><td>0.7672209026128266</td><td>0.8433179723502304</td><td>842</td><td>0.9025081548211961</td></tr>
+<tr><td>H2</td><td>SCC</td><td>0.3302752293577982</td><td>25</td><td>0.2903225806451613</td><td>0.3829787234042553</td><td>0.964573268921095</td><td>94</td><td>0.8692011854592798</td></tr>
+<tr><td>H2</td><td>VASC</td><td>0.1038961038961039</td><td>8</td><td>0.08695652173913043</td><td>0.12903225806451613</td><td>0.983510011778563</td><td>31</td><td>0.860683663259749</td></tr>
+<tr><td>H3</td><td>AK</td><td>0.2813688212927757</td><td>48</td><td>0.27611940298507465</td><td>0.2868217054263566</td><td>0.9603919967333605</td><td>129</td><td>0.8591040165104568</td></tr>
+<tr><td>H3</td><td>BCC</td><td>0.6557971014492754</td><td>196</td><td>0.6908396946564885</td><td>0.6241379310344828</td><td>0.918918918918919</td><td>580</td><td>0.9039781160470816</td></tr>
+<tr><td>H3</td><td>BKL</td><td>0.3271889400921659</td><td>70</td><td>0.36787564766839376</td><td>0.2946058091286307</td><td>0.9477963200684638</td><td>241</td><td>0.7764449581599988</td></tr>
+<tr><td>H3</td><td>DF</td><td>0.136986301369863</td><td>8</td><td>0.11363636363636363</td><td>0.1724137931034483</td><td>0.984699882306787</td><td>29</td><td>0.7892615089081586</td></tr>
+<tr><td>H3</td><td>MEL</td><td>0.6981585268214572</td><td>105</td><td>0.706645056726094</td><td>0.689873417721519</td><td>0.906988694758479</td><td>632</td><td>0.882222702850378</td></tr>
+<tr><td>H3</td><td>NV</td><td>0.7386231038506418</td><td>255</td><td>0.7259174311926605</td><td>0.7517814726840855</td><td>0.8623271889400922</td><td>842</td><td>0.9018931225850235</td></tr>
+<tr><td>H3</td><td>SCC</td><td>0.36065573770491804</td><td>25</td><td>0.29333333333333333</td><td>0.46808510638297873</td><td>0.9573268921095008</td><td>94</td><td>0.881432658375304</td></tr>
+<tr><td>H3</td><td>VASC</td><td>0.13333333333333333</td><td>8</td><td>0.11363636363636363</td><td>0.16129032258064516</td><td>0.9846878680800942</td><td>31</td><td>0.8796813455425105</td></tr>
+<tr><td>H4</td><td>AK</td><td>0.28363636363636363</td><td>48</td><td>0.2671232876712329</td><td>0.3023255813953488</td><td>0.9563086974275214</td><td>129</td><td>0.8579771525159771</td></tr>
+<tr><td>H4</td><td>BCC</td><td>0.6428571428571429</td><td>196</td><td>0.685546875</td><td>0.6051724137931035</td><td>0.9194194194194194</td><td>580</td><td>0.9016792654723689</td></tr>
+<tr><td>H4</td><td>BKL</td><td>0.32142857142857145</td><td>70</td><td>0.34782608695652173</td><td>0.2987551867219917</td><td>0.9422336328626444</td><td>241</td><td>0.7786892085998824</td></tr>
+<tr><td>H4</td><td>DF</td><td>0.14285714285714285</td><td>8</td><td>0.12195121951219512</td><td>0.1724137931034483</td><td>0.9858768144370341</td><td>29</td><td>0.7868805887366243</td></tr>
+<tr><td>H4</td><td>MEL</td><td>0.6948207171314741</td><td>105</td><td>0.6998394863563403</td><td>0.689873417721519</td><td>0.9039054470709147</td><td>632</td><td>0.882032439148139</td></tr>
+<tr><td>H4</td><td>NV</td><td>0.7309048178613397</td><td>255</td><td>0.7232558139534884</td><td>0.7387173396674585</td><td>0.8629032258064516</td><td>842</td><td>0.9028016462887354</td></tr>
+<tr><td>H4</td><td>SCC</td><td>0.33613445378151263</td><td>25</td><td>0.2777777777777778</td><td>0.425531914893617</td><td>0.9581320450885669</td><td>94</td><td>0.8794540377565354</td></tr>
+<tr><td>H4</td><td>VASC</td><td>0.18421052631578946</td><td>8</td><td>0.15555555555555556</td><td>0.22580645161290322</td><td>0.9850804868472713</td><td>31</td><td>0.8737160733057234</td></tr>
+</tbody></table></div>
+<p class="note">Exact saved CSV fields and values (unrounded). Probability and classification rates are fractions unless the source field explicitly specifies another unit. Blank values are retained.</p></section>
+<section><h2>Table S 4. Reserved confusions</h2>
+<div class="scroll"><table><thead><tr><th scope="col">arm</th><th scope="col">true_class</th><th scope="col">AK</th><th scope="col">BCC</th><th scope="col">BKL</th><th scope="col">DF</th><th scope="col">MEL</th><th scope="col">NV</th><th scope="col">SCC</th><th scope="col">VASC</th></tr></thead><tbody><tr><td>H0</td><td>AK</td><td>44</td><td>28</td><td>26</td><td>0</td><td>5</td><td>15</td><td>11</td><td>0</td></tr>
+<tr><td>H0</td><td>BCC</td><td>50</td><td>331</td><td>44</td><td>1</td><td>23</td><td>64</td><td>44</td><td>23</td></tr>
+<tr><td>H0</td><td>BKL</td><td>31</td><td>19</td><td>80</td><td>2</td><td>35</td><td>57</td><td>17</td><td>0</td></tr>
+<tr><td>H0</td><td>DF</td><td>3</td><td>7</td><td>2</td><td>2</td><td>5</td><td>6</td><td>3</td><td>1</td></tr>
+<tr><td>H0</td><td>MEL</td><td>18</td><td>18</td><td>62</td><td>1</td><td>395</td><td>129</td><td>7</td><td>2</td></tr>
+<tr><td>H0</td><td>NV</td><td>8</td><td>34</td><td>44</td><td>20</td><td>103</td><td>620</td><td>2</td><td>11</td></tr>
+<tr><td>H0</td><td>SCC</td><td>25</td><td>20</td><td>3</td><td>0</td><td>5</td><td>7</td><td>34</td><td>0</td></tr>
+<tr><td>H0</td><td>VASC</td><td>0</td><td>1</td><td>1</td><td>2</td><td>0</td><td>13</td><td>4</td><td>10</td></tr>
+<tr><td>H1</td><td>AK</td><td>42</td><td>35</td><td>29</td><td>0</td><td>7</td><td>7</td><td>8</td><td>1</td></tr>
+<tr><td>H1</td><td>BCC</td><td>50</td><td>342</td><td>31</td><td>6</td><td>22</td><td>71</td><td>40</td><td>18</td></tr>
+<tr><td>H1</td><td>BKL</td><td>43</td><td>25</td><td>67</td><td>2</td><td>31</td><td>56</td><td>16</td><td>1</td></tr>
+<tr><td>H1</td><td>DF</td><td>1</td><td>10</td><td>1</td><td>5</td><td>2</td><td>8</td><td>1</td><td>1</td></tr>
+<tr><td>H1</td><td>MEL</td><td>15</td><td>32</td><td>45</td><td>0</td><td>410</td><td>120</td><td>7</td><td>3</td></tr>
+<tr><td>H1</td><td>NV</td><td>5</td><td>38</td><td>24</td><td>21</td><td>85</td><td>654</td><td>0</td><td>15</td></tr>
+<tr><td>H1</td><td>SCC</td><td>17</td><td>32</td><td>3</td><td>0</td><td>5</td><td>3</td><td>34</td><td>0</td></tr>
+<tr><td>H1</td><td>VASC</td><td>1</td><td>3</td><td>2</td><td>1</td><td>0</td><td>16</td><td>4</td><td>4</td></tr>
+<tr><td>H2</td><td>AK</td><td>42</td><td>40</td><td>27</td><td>0</td><td>4</td><td>7</td><td>8</td><td>1</td></tr>
+<tr><td>H2</td><td>BCC</td><td>38</td><td>365</td><td>21</td><td>7</td><td>19</td><td>67</td><td>44</td><td>19</td></tr>
+<tr><td>H2</td><td>BKL</td><td>37</td><td>28</td><td>66</td><td>2</td><td>29</td><td>54</td><td>23</td><td>2</td></tr>
+<tr><td>H2</td><td>DF</td><td>1</td><td>11</td><td>1</td><td>3</td><td>4</td><td>6</td><td>2</td><td>1</td></tr>
+<tr><td>H2</td><td>MEL</td><td>13</td><td>38</td><td>39</td><td>0</td><td>413</td><td>119</td><td>7</td><td>3</td></tr>
+<tr><td>H2</td><td>NV</td><td>5</td><td>40</td><td>23</td><td>22</td><td>89</td><td>646</td><td>1</td><td>16</td></tr>
+<tr><td>H2</td><td>SCC</td><td>14</td><td>33</td><td>3</td><td>0</td><td>5</td><td>3</td><td>36</td><td>0</td></tr>
+<tr><td>H2</td><td>VASC</td><td>2</td><td>4</td><td>1</td><td>1</td><td>0</td><td>16</td><td>3</td><td>4</td></tr>
+<tr><td>H3</td><td>AK</td><td>37</td><td>35</td><td>28</td><td>0</td><td>7</td><td>6</td><td>14</td><td>2</td></tr>
+<tr><td>H3</td><td>BCC</td><td>35</td><td>362</td><td>25</td><td>8</td><td>24</td><td>59</td><td>50</td><td>17</td></tr>
+<tr><td>H3</td><td>BKL</td><td>34</td><td>24</td><td>71</td><td>2</td><td>35</td><td>47</td><td>27</td><td>1</td></tr>
+<tr><td>H3</td><td>DF</td><td>1</td><td>8</td><td>0</td><td>5</td><td>4</td><td>7</td><td>3</td><td>1</td></tr>
+<tr><td>H3</td><td>MEL</td><td>11</td><td>31</td><td>40</td><td>1</td><td>436</td><td>102</td><td>8</td><td>3</td></tr>
+<tr><td>H3</td><td>NV</td><td>3</td><td>34</td><td>24</td><td>26</td><td>106</td><td>633</td><td>1</td><td>15</td></tr>
+<tr><td>H3</td><td>SCC</td><td>13</td><td>26</td><td>3</td><td>1</td><td>5</td><td>2</td><td>44</td><td>0</td></tr>
+<tr><td>H3</td><td>VASC</td><td>0</td><td>4</td><td>2</td><td>1</td><td>0</td><td>16</td><td>3</td><td>5</td></tr>
+<tr><td>H4</td><td>AK</td><td>39</td><td>32</td><td>32</td><td>0</td><td>5</td><td>6</td><td>13</td><td>2</td></tr>
+<tr><td>H4</td><td>BCC</td><td>40</td><td>351</td><td>31</td><td>8</td><td>27</td><td>57</td><td>49</td><td>17</td></tr>
+<tr><td>H4</td><td>BKL</td><td>36</td><td>23</td><td>72</td><td>2</td><td>33</td><td>51</td><td>23</td><td>1</td></tr>
+<tr><td>H4</td><td>DF</td><td>1</td><td>7</td><td>1</td><td>5</td><td>4</td><td>6</td><td>4</td><td>1</td></tr>
+<tr><td>H4</td><td>MEL</td><td>11</td><td>30</td><td>41</td><td>1</td><td>436</td><td>102</td><td>9</td><td>2</td></tr>
+<tr><td>H4</td><td>NV</td><td>4</td><td>38</td><td>23</td><td>23</td><td>114</td><td>622</td><td>3</td><td>15</td></tr>
+<tr><td>H4</td><td>SCC</td><td>15</td><td>28</td><td>5</td><td>1</td><td>4</td><td>1</td><td>40</td><td>0</td></tr>
+<tr><td>H4</td><td>VASC</td><td>0</td><td>3</td><td>2</td><td>1</td><td>0</td><td>15</td><td>3</td><td>7</td></tr>
+</tbody></table></div>
+<p class="note">Exact saved CSV fields and values (unrounded). Probability and classification rates are fractions unless the source field explicitly specifies another unit. Blank values are retained.</p></section>
+<section><h2>Table S 5. Reserved scenarios</h2>
+<div class="scroll"><table><thead><tr><th scope="col">arm</th><th scope="col">scenario</th><th scope="col">forced_fields</th><th scope="col">accuracy</th><th scope="col">balanced_accuracy</th><th scope="col">equal_group_weighted_macro_f1</th><th scope="col">macro_f1</th><th scope="col">mel_recall</th><th scope="col">scc_recall</th><th scope="col">macro_f1_lower_95</th><th scope="col">macro_f1_upper_95</th></tr></thead><tbody><tr><td>H0</td><td>M00</td><td>Natural</td><td>0.5880527540729248</td><td>0.41978943334708896</td><td>0.40390465648507173</td><td>0.4058776996469847</td><td>0.625</td><td>0.3617021276595745</td><td>0.3677980359729174</td><td>0.4467796169368013</td></tr>
+<tr><td>H1</td><td>M00</td><td>Natural</td><td>0.604344453064391</td><td>0.4102311641027286</td><td>0.398657293411935</td><td>0.4029700152766552</td><td>0.6487341772151899</td><td>0.3617021276595745</td><td>0.3639038608276431</td><td>0.443180624806495</td></tr>
+<tr><td>H1</td><td>M01</td><td>Age</td><td>0.5923196276183088</td><td>0.4112415000610453</td><td>0.40842757055618295</td><td>0.4048029644353252</td><td>0.6598101265822784</td><td>0.3191489361702128</td><td>0.36530124705405903</td><td>0.44537505094852</td></tr>
+<tr><td>H1</td><td>M02</td><td>Sex</td><td>0.6101629169899146</td><td>0.41764389149463776</td><td>0.4067050339360869</td><td>0.4112364056869079</td><td>0.6867088607594937</td><td>0.3191489361702128</td><td>0.3717543668745723</td><td>0.4523059143725835</td></tr>
+<tr><td>H1</td><td>M03</td><td>Site</td><td>0.6066718386346005</td><td>0.3747266561236831</td><td>0.3769530391900719</td><td>0.37870851576419595</td><td>0.634493670886076</td><td>0.24468085106382978</td><td>0.3432235167991557</td><td>0.41650437743675633</td></tr>
+<tr><td>H1</td><td>M04</td><td>Age + sex</td><td>0.5849495733126454</td><td>0.39433652636229444</td><td>0.3835805243521526</td><td>0.38817140297892266</td><td>0.6819620253164557</td><td>0.20212765957446807</td><td>0.3538009210975351</td><td>0.42412060628735426</td></tr>
+<tr><td>H1</td><td>M05</td><td>Age + site</td><td>0.5950349107835532</td><td>0.38077208452206446</td><td>0.398289976836258</td><td>0.3861161476994258</td><td>0.6392405063291139</td><td>0.2127659574468085</td><td>0.34863367778436294</td><td>0.42666607749035995</td></tr>
+<tr><td>H1</td><td>M06</td><td>Sex + site</td><td>0.6062839410395655</td><td>0.3746972899145693</td><td>0.3726300802882278</td><td>0.37774669201417127</td><td>0.6550632911392406</td><td>0.22340425531914893</td><td>0.3446476734601723</td><td>0.4125851012854961</td></tr>
+<tr><td>H1</td><td>M07</td><td>All three</td><td>0.5865011636927852</td><td>0.3755998015465601</td><td>0.38783455937300315</td><td>0.378280587013371</td><td>0.6566455696202531</td><td>0.1595744680851064</td><td>0.34171651984031515</td><td>0.41860442484600935</td></tr>
+<tr><td>H2</td><td>M00</td><td>Natural</td><td>0.6109387121799845</td><td>0.408113979242518</td><td>0.3934317227515052</td><td>0.4007334132486454</td><td>0.6534810126582279</td><td>0.3829787234042553</td><td>0.3658210409214717</td><td>0.43642509568473475</td></tr>
+<tr><td>H2</td><td>M01</td><td>Age</td><td>0.5969743987587277</td><td>0.4056561803844162</td><td>0.40631784802471416</td><td>0.39868595316267796</td><td>0.6629746835443038</td><td>0.24468085106382978</td><td>0.3628782524190452</td><td>0.4374080193298728</td></tr>
+<tr><td>H2</td><td>M02</td><td>Sex</td><td>0.6152055857253685</td><td>0.4019166395060686</td><td>0.397455304336467</td><td>0.3997677515142939</td><td>0.680379746835443</td><td>0.23404255319148937</td><td>0.36485654240318527</td><td>0.4363440653926801</td></tr>
+<tr><td>H2</td><td>M03</td><td>Site</td><td>0.6229635376260667</td><td>0.38137051317800186</td><td>0.38449287072979965</td><td>0.38766139733150057</td><td>0.6313291139240507</td><td>0.2765957446808511</td><td>0.3531760533354378</td><td>0.42399053722968794</td></tr>
+<tr><td>H2</td><td>M04</td><td>Age + sex</td><td>0.582622187742436</td><td>0.38157650302148205</td><td>0.383404820494439</td><td>0.37661406554300575</td><td>0.6867088607594937</td><td>0.14893617021276595</td><td>0.3430650240588659</td><td>0.4124712281240893</td></tr>
+<tr><td>H2</td><td>M05</td><td>Age + site</td><td>0.5961986035686578</td><td>0.3720297236947867</td><td>0.38241198601371684</td><td>0.3771879043481132</td><td>0.6265822784810127</td><td>0.18085106382978725</td><td>0.3400273716149995</td><td>0.417084745964913</td></tr>
+<tr><td>H2</td><td>M06</td><td>Sex + site</td><td>0.6198603568657874</td><td>0.3782569862197601</td><td>0.38391545301942476</td><td>0.3847078582301061</td><td>0.6582278481012658</td><td>0.2127659574468085</td><td>0.35075958461203444</td><td>0.4208184316148385</td></tr>
+<tr><td>H2</td><td>M07</td><td>All three</td><td>0.5938712179984484</td><td>0.36716985651657064</td><td>0.3747813789214819</td><td>0.3731673137884241</td><td>0.6518987341772152</td><td>0.14893617021276595</td><td>0.33639563039320675</td><td>0.4129188098623471</td></tr>
+<tr><td>H3</td><td>M00</td><td>Natural</td><td>0.6179208688906129</td><td>0.43112619475776837</td><td>0.4081088250525946</td><td>0.4165139832393038</td><td>0.689873417721519</td><td>0.46808510638297873</td><td>0.3771467486501372</td><td>0.45749484074474095</td></tr>
+<tr><td>H3</td><td>M01</td><td>Age</td><td>0.6074476338246703</td><td>0.4316864050102908</td><td>0.4128040181841449</td><td>0.4183363751923514</td><td>0.6376582278481012</td><td>0.4574468085106383</td><td>0.37516072715023724</td><td>0.46169326686370926</td></tr>
+<tr><td>H3</td><td>M02</td><td>Sex</td><td>0.6202482544608223</td><td>0.42165875564456545</td><td>0.40875558394551564</td><td>0.415963910491852</td><td>0.6518987341772152</td><td>0.40425531914893614</td><td>0.3743484535968597</td><td>0.45916546820223986</td></tr>
+<tr><td>H3</td><td>M03</td><td>Site</td><td>0.6082234290147401</td><td>0.40702569018973683</td><td>0.40181171238276514</td><td>0.3988822074118785</td><td>0.6645569620253164</td><td>0.3723404255319149</td><td>0.36244195732780243</td><td>0.43797489513165283</td></tr>
+<tr><td>H3</td><td>M04</td><td>Age + sex</td><td>0.6089992242048099</td><td>0.4112259194395186</td><td>0.4028001435066812</td><td>0.40706104919652164</td><td>0.6170886075949367</td><td>0.35106382978723405</td><td>0.36685450858108964</td><td>0.4486848106452334</td></tr>
+<tr><td>H3</td><td>M05</td><td>Age + site</td><td>0.6020170674941815</td><td>0.40248250452321266</td><td>0.39861486410031494</td><td>0.39832138132888095</td><td>0.6170886075949367</td><td>0.35106382978723405</td><td>0.3585515129799398</td><td>0.4402844109713865</td></tr>
+<tr><td>H3</td><td>M06</td><td>Sex + site</td><td>0.6105508145849495</td><td>0.4004772773177428</td><td>0.3974791116296573</td><td>0.3970116243125211</td><td>0.6360759493670886</td><td>0.32978723404255317</td><td>0.3588863551943563</td><td>0.43781908314247986</td></tr>
+<tr><td>H3</td><td>M07</td><td>All three</td><td>0.6027928626842514</td><td>0.3915914506910732</td><td>0.3913394093948815</td><td>0.39239837072995487</td><td>0.5965189873417721</td><td>0.2978723404255319</td><td>0.3526555393357892</td><td>0.4347561565031628</td></tr>
+<tr><td>H4</td><td>M00</td><td>Natural</td><td>0.6097750193948798</td><td>0.43232451236367375</td><td>0.4115228968257946</td><td>0.4171062169836671</td><td>0.689873417721519</td><td>0.425531914893617</td><td>0.37612011484649854</td><td>0.4593068980135735</td></tr>
+<tr><td>H4</td><td>M01</td><td>Age</td><td>0.6082234290147401</td><td>0.4374600858435765</td><td>0.424115872005545</td><td>0.4236992327839128</td><td>0.634493670886076</td><td>0.43617021276595747</td><td>0.3799220812576648</td><td>0.4695104692250535</td></tr>
+<tr><td>H4</td><td>M02</td><td>Sex</td><td>0.6132660977501939</td><td>0.4248760523203714</td><td>0.4137177323448945</td><td>0.41719566061957014</td><td>0.6471518987341772</td><td>0.3723404255319149</td><td>0.37514375849577536</td><td>0.4611555226984616</td></tr>
+<tr><td>H4</td><td>M03</td><td>Site</td><td>0.6062839410395655</td><td>0.4040351652970675</td><td>0.3946113411453485</td><td>0.39622552269857403</td><td>0.6645569620253164</td><td>0.3617021276595745</td><td>0.3598062183909925</td><td>0.43402980237757227</td></tr>
+<tr><td>H4</td><td>M04</td><td>Age + sex</td><td>0.612878200155159</td><td>0.4174844277172196</td><td>0.4169582832943441</td><td>0.4133474729576107</td><td>0.6123417721518988</td><td>0.32978723404255317</td><td>0.37279824628126595</td><td>0.45636816605450764</td></tr>
+<tr><td>H4</td><td>M05</td><td>Age + site</td><td>0.5989138867339022</td><td>0.4059096739045948</td><td>0.4009718782170256</td><td>0.40103805598538483</td><td>0.6218354430379747</td><td>0.35106382978723405</td><td>0.36095274018227186</td><td>0.4426773735498132</td></tr>
+<tr><td>H4</td><td>M06</td><td>Sex + site</td><td>0.6066718386346005</td><td>0.3983950074167205</td><td>0.3987369369242544</td><td>0.3969835393983856</td><td>0.6392405063291139</td><td>0.2978723404255319</td><td>0.3588896800993367</td><td>0.4383204242398871</td></tr>
+<tr><td>H4</td><td>M07</td><td>All three</td><td>0.6024049650892165</td><td>0.40180931833667516</td><td>0.41303580840146403</td><td>0.4028762051841112</td><td>0.6060126582278481</td><td>0.2978723404255319</td><td>0.3624221622575274</td><td>0.44707925591743986</td></tr>
+</tbody></table></div>
+<p class="note">Exact saved CSV fields and values (unrounded). Probability and classification rates are fractions unless the source field explicitly specifies another unit. Blank values are retained.</p></section>
+<section><h2>Table S 6. Reserved robustness</h2>
+<div class="scroll"><table><thead><tr><th scope="col">arm</th><th scope="col">metric</th><th scope="col">worst_scenarios</th><th scope="col">estimate</th><th scope="col">level</th><th scope="col">lower</th><th scope="col">replicates</th><th scope="col">upper</th></tr></thead><tbody><tr><td>H1</td><td>absolute_worst_scenario_macro_f1</td><td>M06</td><td>0.37774669201417127</td><td>0.95</td><td>0.3384954153817295</td><td>10000</td><td>0.4077944128756138</td></tr>
+<tr><td>H1</td><td>all_missing_macro_f1</td><td>M06</td><td>0.378280587013371</td><td>0.95</td><td>0.34171651984031515</td><td>10000</td><td>0.41860442484600935</td></tr>
+<tr><td>H1</td><td>forced_only_worst_macro_f1</td><td>M06</td><td>0.37774669201417127</td><td>0.95</td><td>0.338563979943177</td><td>10000</td><td>0.4077944128756138</td></tr>
+<tr><td>H1</td><td>worst_drop_from_natural</td><td>M06</td><td>0.025223323262483943</td><td>0.95</td><td>0.007543154011844473</td><td>10000</td><td>0.05546672239538971</td></tr>
+<tr><td>H2</td><td>absolute_worst_scenario_macro_f1</td><td>M07</td><td>0.3731673137884241</td><td>0.95</td><td>0.3351558323111528</td><td>10000</td><td>0.40448293641124183</td></tr>
+<tr><td>H2</td><td>all_missing_macro_f1</td><td>M07</td><td>0.3731673137884241</td><td>0.95</td><td>0.33639563039320675</td><td>10000</td><td>0.4129188098623471</td></tr>
+<tr><td>H2</td><td>forced_only_worst_macro_f1</td><td>M07</td><td>0.3731673137884241</td><td>0.95</td><td>0.3351558323111528</td><td>10000</td><td>0.40448293641124183</td></tr>
+<tr><td>H2</td><td>worst_drop_from_natural</td><td>M07</td><td>0.027566099460221316</td><td>0.95</td><td>0.010419550173204162</td><td>10000</td><td>0.05467621517099108</td></tr>
+<tr><td>H3</td><td>absolute_worst_scenario_macro_f1</td><td>M07</td><td>0.39239837072995487</td><td>0.95</td><td>0.3519675446552045</td><td>10000</td><td>0.4317762709047531</td></tr>
+<tr><td>H3</td><td>all_missing_macro_f1</td><td>M07</td><td>0.39239837072995487</td><td>0.95</td><td>0.3526555393357892</td><td>10000</td><td>0.4347561565031628</td></tr>
+<tr><td>H3</td><td>forced_only_worst_macro_f1</td><td>M07</td><td>0.39239837072995487</td><td>0.95</td><td>0.3519675446552045</td><td>10000</td><td>0.4319170143386083</td></tr>
+<tr><td>H3</td><td>worst_drop_from_natural</td><td>M07</td><td>0.024115612509348905</td><td>0.95</td><td>0.0033059323095292535</td><td>10000</td><td>0.048338633457622786</td></tr>
+<tr><td>H4</td><td>absolute_worst_scenario_macro_f1</td><td>M03</td><td>0.39622552269857403</td><td>0.95</td><td>0.3570716768659648</td><td>10000</td><td>0.43301271927635904</td></tr>
+<tr><td>H4</td><td>all_missing_macro_f1</td><td>M03</td><td>0.4028762051841112</td><td>0.95</td><td>0.3624221622575274</td><td>10000</td><td>0.44707925591743986</td></tr>
+<tr><td>H4</td><td>forced_only_worst_macro_f1</td><td>M03</td><td>0.39622552269857403</td><td>0.95</td><td>0.3570716768659648</td><td>10000</td><td>0.433015668021632</td></tr>
+<tr><td>H4</td><td>worst_drop_from_natural</td><td>M03</td><td>0.020880694285093093</td><td>0.95</td><td>0.005662176293599243</td><td>10000</td><td>0.04310687494193346</td></tr>
+</tbody></table></div>
+<p class="note">Exact saved CSV fields and values (unrounded). Probability and classification rates are fractions unless the source field explicitly specifies another unit. Blank values are retained.</p></section>
+<section><h2>Table S 7. Primary contrasts</h2>
+<div class="scroll"><table><thead><tr><th scope="col">contrast</th><th scope="col">metric</th><th scope="col">estimate</th><th scope="col">lower</th><th scope="col">upper</th><th scope="col">level</th><th scope="col">replicates</th><th scope="col">positive_lower_bound</th></tr></thead><tbody><tr><td>H1-H0</td><td>natural_macro_f1</td><td>-0.0029076843703295108</td><td>-0.03191464437552294</td><td>0.02416235709511192</td><td>0.9833333333333333</td><td>10000</td><td>False</td></tr>
+<tr><td>H3-H2</td><td>absolute_worst_scenario_macro_f1</td><td>0.019231056941530766</td><td>-0.004773630358323638</td><td>0.04954540829569083</td><td>0.9833333333333333</td><td>10000</td><td>False</td></tr>
+<tr><td>H3-H4</td><td>absolute_worst_scenario_macro_f1</td><td>-0.003827151968619158</td><td>-0.015867144804977362</td><td>0.00845804547203542</td><td>0.9833333333333333</td><td>10000</td><td>False</td></tr>
+</tbody></table></div>
+<p class="note">Exact saved CSV fields and values (unrounded). Probability and classification rates are fractions unless the source field explicitly specifies another unit. Blank values are retained.</p></section>
+<section><h2>Table S 8. Secondary contrasts</h2>
+<div class="scroll"><table><thead><tr><th scope="col">family</th><th scope="col">contrast</th><th scope="col">metric</th><th scope="col">estimate</th><th scope="col">level</th><th scope="col">lower</th><th scope="col">replicates</th><th scope="col">upper</th></tr></thead><tbody><tr><td>natural</td><td>H1-H0</td><td>accuracy</td><td>0.016291698991466208</td><td>0.95</td><td>-0.0015130461833222182</td><td>10000</td><td>0.03377913992599068</td></tr>
+<tr><td>natural</td><td>H1-H0</td><td>balanced_accuracy</td><td>-0.009558269244360373</td><td>0.95</td><td>-0.04351491986557343</td><td>10000</td><td>0.01840860534808543</td></tr>
+<tr><td>natural</td><td>H1-H0</td><td>equal_group_weighted_macro_f1</td><td>-0.005247363073136724</td><td>0.95</td><td>-0.03563481009393377</td><td>10000</td><td>0.021987490629861363</td></tr>
+<tr><td>natural</td><td>H1-H0</td><td>macro_f1</td><td>-0.0029076843703295108</td><td>0.95</td><td>-0.027214359014757907</td><td>10000</td><td>0.0194873735735378</td></tr>
+<tr><td>natural</td><td>H1-H0</td><td>mel_recall</td><td>0.02373417721518989</td><td>0.95</td><td>-0.01613033719594945</td><td>10000</td><td>0.06299212598425197</td></tr>
+<tr><td>natural</td><td>H1-H0</td><td>scc_recall</td><td>0.0</td><td>0.95</td><td>-0.1111111111111111</td><td>10000</td><td>0.10281096444744185</td></tr>
+<tr><td>natural</td><td>H2-H1</td><td>accuracy</td><td>0.006594259115593526</td><td>0.95</td><td>-0.0024253450956779822</td><td>10000</td><td>0.01587888839502211</td></tr>
+<tr><td>natural</td><td>H2-H1</td><td>balanced_accuracy</td><td>-0.0021171848602105636</td><td>0.95</td><td>-0.020056970195804512</td><td>10000</td><td>0.013283239728225836</td></tr>
+<tr><td>natural</td><td>H2-H1</td><td>equal_group_weighted_macro_f1</td><td>-0.005225570660429835</td><td>0.95</td><td>-0.020633947509651494</td><td>10000</td><td>0.010241767079021035</td></tr>
+<tr><td>natural</td><td>H2-H1</td><td>macro_f1</td><td>-0.002236602028009793</td><td>0.95</td><td>-0.016775957113562147</td><td>10000</td><td>0.011545531503115514</td></tr>
+<tr><td>natural</td><td>H2-H1</td><td>mel_recall</td><td>0.004746835443038</td><td>0.95</td><td>-0.013582663534384167</td><td>10000</td><td>0.022346576859352728</td></tr>
+<tr><td>natural</td><td>H2-H1</td><td>scc_recall</td><td>0.021276595744680826</td><td>0.95</td><td>-0.03125</td><td>10000</td><td>0.09195402298850575</td></tr>
+<tr><td>natural</td><td>H3-H2</td><td>accuracy</td><td>0.006982156710628407</td><td>0.95</td><td>-0.004297169537064322</td><td>10000</td><td>0.018541434410999532</td></tr>
+<tr><td>natural</td><td>H3-H2</td><td>balanced_accuracy</td><td>0.023012215515250345</td><td>0.95</td><td>0.006290122490420846</td><td>10000</td><td>0.043698338287721995</td></tr>
+<tr><td>natural</td><td>H3-H2</td><td>equal_group_weighted_macro_f1</td><td>0.014677102301089429</td><td>0.95</td><td>-0.0010672909038200095</td><td>10000</td><td>0.03147366838242058</td></tr>
+<tr><td>natural</td><td>H3-H2</td><td>macro_f1</td><td>0.015780569990658355</td><td>0.95</td><td>0.001507816457622275</td><td>10000</td><td>0.030792002214812476</td></tr>
+<tr><td>natural</td><td>H3-H2</td><td>mel_recall</td><td>0.03639240506329111</td><td>0.95</td><td>0.013489277893836046</td><td>10000</td><td>0.060913705583756306</td></tr>
+<tr><td>natural</td><td>H3-H2</td><td>scc_recall</td><td>0.08510638297872342</td><td>0.95</td><td>0.023255813953488358</td><td>10000</td><td>0.1559704701834861</td></tr>
+<tr><td>natural</td><td>H3-H4</td><td>accuracy</td><td>0.00814584949573316</td><td>0.95</td><td>-0.0007468819315661424</td><td>10000</td><td>0.016544135329198954</td></tr>
+<tr><td>natural</td><td>H3-H4</td><td>balanced_accuracy</td><td>-0.0011983176059053857</td><td>0.95</td><td>-0.02006712078561281</td><td>10000</td><td>0.012282513222291456</td></tr>
+<tr><td>natural</td><td>H3-H4</td><td>equal_group_weighted_macro_f1</td><td>-0.0034140717732000225</td><td>0.95</td><td>-0.01835352314533906</td><td>10000</td><td>0.011891530038319767</td></tr>
+<tr><td>natural</td><td>H3-H4</td><td>macro_f1</td><td>-0.0005922337443633463</td><td>0.95</td><td>-0.014047075826762517</td><td>10000</td><td>0.011410873783988328</td></tr>
+<tr><td>natural</td><td>H3-H4</td><td>mel_recall</td><td>0.0</td><td>0.95</td><td>-0.014754249591676278</td><td>10000</td><td>0.013289650867915594</td></tr>
+<tr><td>natural</td><td>H3-H4</td><td>scc_recall</td><td>0.04255319148936171</td><td>0.95</td><td>0.009613095238095226</td><td>10000</td><td>0.08860759493670883</td></tr>
+<tr><td>natural</td><td>H4-H1</td><td>accuracy</td><td>0.005430566330488773</td><td>0.95</td><td>-0.006292011464959687</td><td>10000</td><td>0.017295803120610395</td></tr>
+<tr><td>natural</td><td>H4-H1</td><td>balanced_accuracy</td><td>0.022093348260945167</td><td>0.95</td><td>0.00589669721371651</td><td>10000</td><td>0.04393870073013049</td></tr>
+<tr><td>natural</td><td>H4-H1</td><td>equal_group_weighted_macro_f1</td><td>0.012865603413859616</td><td>0.95</td><td>-0.0028321330346572993</td><td>10000</td><td>0.029348202820801198</td></tr>
+<tr><td>natural</td><td>H4-H1</td><td>macro_f1</td><td>0.014136201707011908</td><td>0.95</td><td>1.2148979053659059e-05</td><td>10000</td><td>0.029421957753063357</td></tr>
+<tr><td>natural</td><td>H4-H1</td><td>mel_recall</td><td>0.04113924050632911</td><td>0.95</td><td>0.018492056851189893</td><td>10000</td><td>0.06656114718614718</td></tr>
+<tr><td>natural</td><td>H4-H1</td><td>scc_recall</td><td>0.06382978723404253</td><td>0.95</td><td>0.010638297872340441</td><td>10000</td><td>0.13253319400049177</td></tr>
+<tr><td>robustness</td><td>H3-H2</td><td>absolute_worst_scenario_macro_f1</td><td>0.019231056941530766</td><td>0.95</td><td>-0.00015939133027726836</td><td>10000</td><td>0.044265849172478604</td></tr>
+<tr><td>robustness</td><td>H3-H2</td><td>all_missing_macro_f1</td><td>0.019231056941530766</td><td>0.95</td><td>-0.006113001602181577</td><td>10000</td><td>0.04481473410154821</td></tr>
+<tr><td>robustness</td><td>H3-H2</td><td>forced_only_worst_macro_f1</td><td>0.019231056941530766</td><td>0.95</td><td>-0.00015939133027726836</td><td>10000</td><td>0.044430646525510376</td></tr>
+<tr><td>robustness</td><td>H3-H2</td><td>worst_drop_from_natural</td><td>-0.003450486950872411</td><td>0.95</td><td>-0.029207714283307706</td><td>10000</td><td>0.01674454219738469</td></tr>
+<tr><td>robustness</td><td>H3-H4</td><td>absolute_worst_scenario_macro_f1</td><td>-0.003827151968619158</td><td>0.95</td><td>-0.013275900437530984</td><td>10000</td><td>0.006570685007430428</td></tr>
+<tr><td>robustness</td><td>H3-H4</td><td>all_missing_macro_f1</td><td>-0.010477834454156343</td><td>0.95</td><td>-0.024168734162440603</td><td>10000</td><td>0.00011274789238695078</td></tr>
+<tr><td>robustness</td><td>H3-H4</td><td>forced_only_worst_macro_f1</td><td>-0.003827151968619158</td><td>0.95</td><td>-0.013275900437530984</td><td>10000</td><td>0.006629429246743175</td></tr>
+<tr><td>robustness</td><td>H3-H4</td><td>worst_drop_from_natural</td><td>0.0032349182242558117</td><td>0.95</td><td>-0.01290027960283319</td><td>10000</td><td>0.017106414698251617</td></tr>
+</tbody></table></div>
+<p class="note">Exact saved CSV fields and values (unrounded). Probability and classification rates are fractions unless the source field explicitly specifies another unit. Blank values are retained.</p></section>
+<section><h2>Table S 9. Development oof</h2>
+<div class="scroll"><table><thead><tr><th scope="col">arm</th><th scope="col">macro_f1</th><th scope="col">accuracy</th><th scope="col">balanced_accuracy</th><th scope="col">mel_recall</th><th scope="col">scc_recall</th><th scope="col">equal_group_weighted_macro_f1</th><th scope="col">fold_mean_macro_f1</th><th scope="col">fold_sample_sd_macro_f1</th></tr></thead><tbody><tr><td>H0</td><td>0.37382977457216576</td><td>0.5580442851657494</td><td>0.3793295284428777</td><td>0.5063924402445803</td><td>0.16541353383458646</td><td>0.3669174652648468</td><td>0.36813706070243823</td><td>0.04049404262981495</td></tr>
+<tr><td>H1</td><td>0.37341335578853574</td><td>0.5686676052732625</td><td>0.3715499440882194</td><td>0.49972206781545303</td><td>0.17293233082706766</td><td>0.37730700634730824</td><td>0.3733895214000104</td><td>0.04469332018096302</td></tr>
+<tr><td>H2</td><td>0.38408661249265524</td><td>0.5712274414437476</td><td>0.38751507412253117</td><td>0.5497498610339078</td><td>0.16541353383458646</td><td>0.38324307636446087</td><td>0.3787375594921463</td><td>0.03766040868389375</td></tr>
+<tr><td>H3</td><td>0.3772838494496814</td><td>0.5703314987840779</td><td>0.3823932396346025</td><td>0.50917176209005</td><td>0.18421052631578946</td><td>0.3719301018729656</td><td>0.3757222668387387</td><td>0.03242478985716605</td></tr>
+<tr><td>H4</td><td>0.36373180703194663</td><td>0.5686676052732625</td><td>0.3662619929792184</td><td>0.5408560311284046</td><td>0.12406015037593984</td><td>0.3666158935906214</td><td>0.3613348432799972</td><td>0.028156747218150056</td></tr>
+</tbody></table></div>
+<p class="note">Exact saved CSV fields and values (unrounded). Probability and classification rates are fractions unless the source field explicitly specifies another unit. Blank values are retained.</p></section>
+<section><h2>Table S 10. Development oof by fold</h2>
+<div class="scroll"><table><thead><tr><th scope="col">arm</th><th scope="col">fold</th><th scope="col">macro_f1</th><th scope="col">accuracy</th><th scope="col">balanced_accuracy</th><th scope="col">mel_recall</th><th scope="col">scc_recall</th><th scope="col">equal_group_weighted_macro_f1</th></tr></thead><tbody><tr><td>H0</td><td>1</td><td>0.41707329982087665</td><td>0.5918106206014075</td><td>0.4605822503982078</td><td>0.6350974930362117</td><td>0.2830188679245283</td><td>0.3860622899751484</td></tr>
+<tr><td>H0</td><td>2</td><td>0.3720398125074863</td><td>0.5502239283429302</td><td>0.37622076162292073</td><td>0.5083333333333333</td><td>0.09433962264150944</td><td>0.3708124303735913</td></tr>
+<tr><td>H0</td><td>3</td><td>0.3918147066004539</td><td>0.5470249520153551</td><td>0.39069887469033676</td><td>0.525</td><td>0.20754716981132076</td><td>0.3705803657843086</td></tr>
+<tr><td>H0</td><td>4</td><td>0.3480591467536843</td><td>0.5416133162612036</td><td>0.3487721648606772</td><td>0.4111111111111111</td><td>0.16666666666666666</td><td>0.37926227888391206</td></tr>
+<tr><td>H0</td><td>5</td><td>0.3116983378296897</td><td>0.559539052496799</td><td>0.3144600602644362</td><td>0.4527777777777778</td><td>0.07547169811320754</td><td>0.3062877954799646</td></tr>
+<tr><td>H1</td><td>1</td><td>0.38341900746568747</td><td>0.6084452975047985</td><td>0.3852518828547621</td><td>0.5543175487465181</td><td>0.2641509433962264</td><td>0.3743884995048599</td></tr>
+<tr><td>H1</td><td>2</td><td>0.4309674438634208</td><td>0.544465770953295</td><td>0.4248596273474474</td><td>0.4722222222222222</td><td>0.22641509433962265</td><td>0.4572580954849893</td></tr>
+<tr><td>H1</td><td>3</td><td>0.3812853890947159</td><td>0.5719769673704415</td><td>0.3825312153703718</td><td>0.5083333333333333</td><td>0.24528301886792453</td><td>0.3543055742258404</td></tr>
+<tr><td>H1</td><td>4</td><td>0.3644601545581988</td><td>0.5646606914212549</td><td>0.3542712423600318</td><td>0.4861111111111111</td><td>0.05555555555555555</td><td>0.38964097202275394</td></tr>
+<tr><td>H1</td><td>5</td><td>0.3068156120180291</td><td>0.5537772087067862</td><td>0.30816943886100034</td><td>0.4777777777777778</td><td>0.07547169811320754</td><td>0.30633002596219194</td></tr>
+<tr><td>H2</td><td>1</td><td>0.39742574520993024</td><td>0.581573896353167</td><td>0.39944812059994056</td><td>0.6824512534818942</td><td>0.20754716981132076</td><td>0.3891797389951108</td></tr>
+<tr><td>H2</td><td>2</td><td>0.406293342240199</td><td>0.5598208573256558</td><td>0.40739001387191975</td><td>0.5833333333333334</td><td>0.20754716981132076</td><td>0.40710682382259866</td></tr>
+<tr><td>H2</td><td>3</td><td>0.40518286886198274</td><td>0.5706973768394114</td><td>0.4267311740583137</td><td>0.4777777777777778</td><td>0.2830188679245283</td><td>0.3784884902111637</td></tr>
+<tr><td>H2</td><td>4</td><td>0.3671258554675765</td><td>0.5813060179257362</td><td>0.3813686743530258</td><td>0.5055555555555555</td><td>0.05555555555555555</td><td>0.39631550622070033</td></tr>
+<tr><td>H2</td><td>5</td><td>0.31765998568104303</td><td>0.5627400768245838</td><td>0.3188593000399001</td><td>0.5</td><td>0.07547169811320754</td><td>0.317861716022196</td></tr>
+<tr><td>H3</td><td>1</td><td>0.37283189704568687</td><td>0.5937300063979527</td><td>0.384113537889442</td><td>0.5487465181058496</td><td>0.32075471698113206</td><td>0.3606390594749506</td></tr>
+<tr><td>H3</td><td>2</td><td>0.38633202937777067</td><td>0.5431861804222649</td><td>0.39757106049873514</td><td>0.5333333333333333</td><td>0.03773584905660377</td><td>0.36750106114504716</td></tr>
+<tr><td>H3</td><td>3</td><td>0.40238791703484733</td><td>0.580934101087652</td><td>0.4030126622584155</td><td>0.5416666666666666</td><td>0.3018867924528302</td><td>0.3778537675945957</td></tr>
+<tr><td>H3</td><td>4</td><td>0.39582803085781054</td><td>0.5710627400768246</td><td>0.4028793706872275</td><td>0.4361111111111111</td><td>0.18518518518518517</td><td>0.4288800135377137</td></tr>
+<tr><td>H3</td><td>5</td><td>0.3212314598775783</td><td>0.5627400768245838</td><td>0.32208831167142715</td><td>0.4861111111111111</td><td>0.07547169811320754</td><td>0.3257871177644132</td></tr>
+<tr><td>H4</td><td>1</td><td>0.36978344086231896</td><td>0.5950095969289827</td><td>0.3769680659075814</td><td>0.5431754874651811</td><td>0.3018867924528302</td><td>0.36223709682472005</td></tr>
+<tr><td>H4</td><td>2</td><td>0.3790954828725168</td><td>0.54638515674984</td><td>0.3902545467230738</td><td>0.5416666666666666</td><td>0.03773584905660377</td><td>0.3668431286810473</td></tr>
+<tr><td>H4</td><td>3</td><td>0.38458019526327036</td><td>0.5598208573256558</td><td>0.37803648537552975</td><td>0.6416666666666667</td><td>0.1509433962264151</td><td>0.3762981709148723</td></tr>
+<tr><td>H4</td><td>4</td><td>0.3592036319075333</td><td>0.5787451984635084</td><td>0.36930181212416824</td><td>0.49722222222222223</td><td>0.05555555555555555</td><td>0.39948336329437584</td></tr>
+<tr><td>H4</td><td>5</td><td>0.31401146549434633</td><td>0.5633802816901409</td><td>0.3138251850909475</td><td>0.48055555555555557</td><td>0.07547169811320754</td><td>0.31418326276685793</td></tr>
+</tbody></table></div>
+<p class="note">Exact saved CSV fields and values (unrounded). Probability and classification rates are fractions unless the source field explicitly specifies another unit. Blank values are retained.</p></section>
+<section><h2>Table S 11. Final training history</h2>
+<div class="scroll"><table><thead><tr><th scope="col">arm</th><th scope="col">epoch</th><th scope="col">train_weighted_ce</th><th scope="col">rows_seen</th><th scope="col">batches</th><th scope="col">fit_seconds</th><th scope="col">head_parameters</th></tr></thead><tbody><tr><td>H0</td><td>1</td><td>1.5245580430271781</td><td>7813</td><td>62</td><td>0.8473607000196353</td><td>126856</td></tr>
+<tr><td>H0</td><td>2</td><td>1.1449785098231124</td><td>7813</td><td>62</td><td>0.5689597000018694</td><td>126856</td></tr>
+<tr><td>H0</td><td>3</td><td>0.9528720446891186</td><td>7813</td><td>62</td><td>0.6075618999893777</td><td>126856</td></tr>
+<tr><td>H0</td><td>4</td><td>0.8119409070909643</td><td>7813</td><td>62</td><td>0.5996056000003591</td><td>126856</td></tr>
+<tr><td>H1</td><td>1</td><td>1.4222490878641267</td><td>7813</td><td>62</td><td>1.1313299000030383</td><td>195665</td></tr>
+<tr><td>H1</td><td>2</td><td>1.003168292708026</td><td>7813</td><td>62</td><td>0.8608063000137918</td><td>195665</td></tr>
+<tr><td>H1</td><td>3</td><td>0.7940935369774471</td><td>7813</td><td>62</td><td>0.88691999996081</td><td>195665</td></tr>
+<tr><td>H1</td><td>4</td><td>0.6575223146848672</td><td>7813</td><td>62</td><td>0.8447117999894544</td><td>195665</td></tr>
+<tr><td>H2</td><td>1</td><td>1.4227266964596494</td><td>7813</td><td>62</td><td>2.0062714000232518</td><td>195665</td></tr>
+<tr><td>H2</td><td>2</td><td>1.0055950129709805</td><td>7813</td><td>62</td><td>1.1873312999960035</td><td>195665</td></tr>
+<tr><td>H2</td><td>3</td><td>0.7967199984271024</td><td>7813</td><td>62</td><td>1.1290607000119053</td><td>195665</td></tr>
+<tr><td>H2</td><td>4</td><td>0.6539126058572098</td><td>7813</td><td>62</td><td>1.1970241999952123</td><td>195665</td></tr>
+<tr><td>H3</td><td>1</td><td>1.4588118214632744</td><td>7813</td><td>62</td><td>1.3515112000168301</td><td>195665</td></tr>
+<tr><td>H3</td><td>2</td><td>1.0519767997084433</td><td>7813</td><td>62</td><td>1.2004506000084803</td><td>195665</td></tr>
+<tr><td>H3</td><td>3</td><td>0.8451578749071865</td><td>7813</td><td>62</td><td>1.2242703000083566</td><td>195665</td></tr>
+<tr><td>H3</td><td>4</td><td>0.7058737363542089</td><td>7813</td><td>62</td><td>1.2125410999869928</td><td>195665</td></tr>
+<tr><td>H4</td><td>1</td><td>1.458627117461312</td><td>7813</td><td>62</td><td>1.3583652999950573</td><td>195665</td></tr>
+<tr><td>H4</td><td>2</td><td>1.0489879812891587</td><td>7813</td><td>62</td><td>1.1589438000228256</td><td>195665</td></tr>
+<tr><td>H4</td><td>3</td><td>0.8424973914809233</td><td>7813</td><td>62</td><td>1.0587664999766275</td><td>195665</td></tr>
+<tr><td>H4</td><td>4</td><td>0.708546325059975</td><td>7813</td><td>62</td><td>1.0664411000325345</td><td>195665</td></tr>
+</tbody></table></div>
+<p class="note">Exact saved CSV fields and values (unrounded). Probability and classification rates are fractions unless the source field explicitly specifies another unit. Blank values are retained.</p></section>
+<section><h2>Table S 12. Xai case interventions</h2>
+<div class="scroll"><table><thead><tr><th scope="col">case_id</th><th scope="col">true_class</th><th scope="col">predicted_class</th><th scope="col">correct</th><th scope="col">bottom4</th><th scope="col">fixed_random4</th><th scope="col">top4</th></tr></thead><tbody><tr><td>X01</td><td>AK</td><td>BCC</td><td>False</td><td>-0.7932367324829102</td><td>0.6031136512756348</td><td>0.9913930892944336</td></tr>
+<tr><td>X02</td><td>AK</td><td>AK</td><td>True</td><td>-0.02917337417602539</td><td>0.2310328483581543</td><td>1.360560655593872</td></tr>
+<tr><td>X03</td><td>BCC</td><td>BCC</td><td>True</td><td>-0.5439574718475342</td><td>0.3676443099975586</td><td>-0.22243833541870117</td></tr>
+<tr><td>X04</td><td>BCC</td><td>BCC</td><td>True</td><td>-0.8081691265106201</td><td>0.08122467994689941</td><td>2.2358920574188232</td></tr>
+<tr><td>X05</td><td>BKL</td><td>BKL</td><td>True</td><td>0.9766130447387695</td><td>2.0237746238708496</td><td>2.8630828857421875</td></tr>
+<tr><td>X06</td><td>BKL</td><td>BCC</td><td>False</td><td>-0.14133644104003906</td><td>1.0306299924850464</td><td>1.7491929531097412</td></tr>
+<tr><td>X07</td><td>DF</td><td>BKL</td><td>False</td><td>-0.8504166603088379</td><td>0.36885666847229004</td><td>0.8770074844360352</td></tr>
+<tr><td>X08</td><td>DF</td><td>DF</td><td>True</td><td>-0.3334672451019287</td><td>-0.3585183620452881</td><td>0.7718064785003662</td></tr>
+<tr><td>X09</td><td>MEL</td><td>MEL</td><td>True</td><td>0.24201488494873047</td><td>1.013587474822998</td><td>3.5765063762664795</td></tr>
+<tr><td>X10</td><td>MEL</td><td>MEL</td><td>True</td><td>-0.6485996246337891</td><td>-0.26015472412109375</td><td>1.5264692306518555</td></tr>
+<tr><td>X11</td><td>NV</td><td>NV</td><td>True</td><td>0.6762824058532715</td><td>1.6076946258544922</td><td>2.3108773231506348</td></tr>
+<tr><td>X12</td><td>NV</td><td>NV</td><td>True</td><td>0.8280363082885742</td><td>1.6672744750976562</td><td>3.191634178161621</td></tr>
+<tr><td>X13</td><td>SCC</td><td>SCC</td><td>True</td><td>-0.6051025390625</td><td>0.10907173156738281</td><td>1.7441835403442383</td></tr>
+<tr><td>X14</td><td>SCC</td><td>SCC</td><td>True</td><td>-0.8737869262695312</td><td>0.04241180419921875</td><td>0.6276535987854004</td></tr>
+<tr><td>X15</td><td>VASC</td><td>VASC</td><td>True</td><td>-0.2740287780761719</td><td>0.6634230613708496</td><td>0.8353888988494873</td></tr>
+<tr><td>X16</td><td>VASC</td><td>VASC</td><td>True</td><td>-0.03340435028076172</td><td>0.7074155807495117</td><td>3.353846549987793</td></tr>
+</tbody></table></div>
+<p class="note">Exact saved CSV fields and values (unrounded). Probability and classification rates are fractions unless the source field explicitly specifies another unit. Blank values are retained.</p></section>
+<section><h2>Table S 13. Xai metadata interventions</h2>
+<div class="scroll"><table><thead><tr><th scope="col">case_id</th><th scope="col">field</th><th scope="col">changed_observation</th><th scope="col">predicted_index_after</th><th scope="col">target_logit_drop</th></tr></thead><tbody><tr><td>X01</td><td>age_approx</td><td>True</td><td>1</td><td>1.128028392791748</td></tr>
+<tr><td>X01</td><td>all_missing</td><td>True</td><td>1</td><td>2.2348055839538574</td></tr>
+<tr><td>X01</td><td>anatom_site_general</td><td>True</td><td>1</td><td>0.9859781265258789</td></tr>
+<tr><td>X01</td><td>sex</td><td>True</td><td>1</td><td>0.6815438270568848</td></tr>
+<tr><td>X02</td><td>age_approx</td><td>True</td><td>0</td><td>1.1731235980987549</td></tr>
+<tr><td>X02</td><td>all_missing</td><td>True</td><td>0</td><td>2.2716734409332275</td></tr>
+<tr><td>X02</td><td>anatom_site_general</td><td>True</td><td>0</td><td>0.6733930110931396</td></tr>
+<tr><td>X02</td><td>sex</td><td>True</td><td>0</td><td>1.0058729648590088</td></tr>
+<tr><td>X03</td><td>age_approx</td><td>True</td><td>1</td><td>0.9930415153503418</td></tr>
+<tr><td>X03</td><td>all_missing</td><td>True</td><td>1</td><td>1.696793556213379</td></tr>
+<tr><td>X03</td><td>anatom_site_general</td><td>True</td><td>1</td><td>0.7020723819732666</td></tr>
+<tr><td>X03</td><td>sex</td><td>True</td><td>1</td><td>0.5230097770690918</td></tr>
+<tr><td>X04</td><td>age_approx</td><td>True</td><td>1</td><td>0.740354061126709</td></tr>
+<tr><td>X04</td><td>all_missing</td><td>True</td><td>1</td><td>1.6411385536193848</td></tr>
+<tr><td>X04</td><td>anatom_site_general</td><td>True</td><td>1</td><td>0.7226312160491943</td></tr>
+<tr><td>X04</td><td>sex</td><td>True</td><td>1</td><td>0.6433060169219971</td></tr>
+<tr><td>X05</td><td>age_approx</td><td>True</td><td>2</td><td>1.2651805877685547</td></tr>
+<tr><td>X05</td><td>all_missing</td><td>True</td><td>2</td><td>4.2517218589782715</td></tr>
+<tr><td>X05</td><td>anatom_site_general</td><td>True</td><td>2</td><td>2.4739933013916016</td></tr>
+<tr><td>X05</td><td>sex</td><td>True</td><td>2</td><td>1.4561829566955566</td></tr>
+<tr><td>X06</td><td>age_approx</td><td>True</td><td>1</td><td>0.6883769035339355</td></tr>
+<tr><td>X06</td><td>all_missing</td><td>True</td><td>1</td><td>1.3559038639068604</td></tr>
+<tr><td>X06</td><td>anatom_site_general</td><td>True</td><td>1</td><td>0.6158068180084229</td></tr>
+<tr><td>X06</td><td>sex</td><td>True</td><td>1</td><td>0.511160135269165</td></tr>
+<tr><td>X07</td><td>age_approx</td><td>True</td><td>2</td><td>0.28349995613098145</td></tr>
+<tr><td>X07</td><td>all_missing</td><td>True</td><td>2</td><td>0.3116273880004883</td></tr>
+<tr><td>X07</td><td>anatom_site_general</td><td>True</td><td>2</td><td>-0.12213611602783203</td></tr>
+<tr><td>X07</td><td>sex</td><td>True</td><td>2</td><td>0.1433451771736145</td></tr>
+<tr><td>X08</td><td>age_approx</td><td>True</td><td>3</td><td>0.7966158390045166</td></tr>
+<tr><td>X08</td><td>all_missing</td><td>True</td><td>3</td><td>1.8709546327590942</td></tr>
+<tr><td>X08</td><td>anatom_site_general</td><td>True</td><td>3</td><td>1.0808656215667725</td></tr>
+<tr><td>X08</td><td>sex</td><td>True</td><td>3</td><td>0.5655913352966309</td></tr>
+<tr><td>X09</td><td>age_approx</td><td>True</td><td>4</td><td>1.2184710502624512</td></tr>
+<tr><td>X09</td><td>all_missing</td><td>True</td><td>4</td><td>3.428161144256592</td></tr>
+<tr><td>X09</td><td>anatom_site_general</td><td>True</td><td>4</td><td>1.3726019859313965</td></tr>
+<tr><td>X09</td><td>sex</td><td>True</td><td>4</td><td>1.263026237487793</td></tr>
+<tr><td>X10</td><td>age_approx</td><td>True</td><td>4</td><td>1.5552754402160645</td></tr>
+<tr><td>X10</td><td>all_missing</td><td>True</td><td>4</td><td>4.2602503299713135</td></tr>
+<tr><td>X10</td><td>anatom_site_general</td><td>True</td><td>4</td><td>1.6698036193847656</td></tr>
+<tr><td>X10</td><td>sex</td><td>True</td><td>4</td><td>1.513364315032959</td></tr>
+<tr><td>X11</td><td>age_approx</td><td>True</td><td>5</td><td>1.284146785736084</td></tr>
+<tr><td>X11</td><td>all_missing</td><td>True</td><td>5</td><td>3.176647901535034</td></tr>
+<tr><td>X11</td><td>anatom_site_general</td><td>True</td><td>5</td><td>1.3208956718444824</td></tr>
+<tr><td>X11</td><td>sex</td><td>True</td><td>5</td><td>0.9926409721374512</td></tr>
+<tr><td>X12</td><td>age_approx</td><td>True</td><td>5</td><td>0.48061299324035645</td></tr>
+<tr><td>X12</td><td>all_missing</td><td>True</td><td>5</td><td>2.178212881088257</td></tr>
+<tr><td>X12</td><td>anatom_site_general</td><td>True</td><td>5</td><td>1.0629708766937256</td></tr>
+<tr><td>X12</td><td>sex</td><td>True</td><td>5</td><td>0.5383124351501465</td></tr>
+<tr><td>X13</td><td>age_approx</td><td>True</td><td>6</td><td>0.6049516201019287</td></tr>
+<tr><td>X13</td><td>all_missing</td><td>True</td><td>6</td><td>2.4214420318603516</td></tr>
+<tr><td>X13</td><td>anatom_site_general</td><td>True</td><td>6</td><td>1.341008186340332</td></tr>
+<tr><td>X13</td><td>sex</td><td>True</td><td>6</td><td>0.833590030670166</td></tr>
+<tr><td>X14</td><td>age_approx</td><td>True</td><td>6</td><td>1.6079111099243164</td></tr>
+<tr><td>X14</td><td>all_missing</td><td>True</td><td>6</td><td>3.4804532527923584</td></tr>
+<tr><td>X14</td><td>anatom_site_general</td><td>True</td><td>6</td><td>1.8129229545593262</td></tr>
+<tr><td>X14</td><td>sex</td><td>True</td><td>6</td><td>1.1716856956481934</td></tr>
+<tr><td>X15</td><td>age_approx</td><td>True</td><td>7</td><td>0.9709916114807129</td></tr>
+<tr><td>X15</td><td>all_missing</td><td>True</td><td>7</td><td>2.592758893966675</td></tr>
+<tr><td>X15</td><td>anatom_site_general</td><td>True</td><td>7</td><td>1.452390193939209</td></tr>
+<tr><td>X15</td><td>sex</td><td>True</td><td>7</td><td>0.9537925720214844</td></tr>
+<tr><td>X16</td><td>age_approx</td><td>True</td><td>7</td><td>0.7636151313781738</td></tr>
+<tr><td>X16</td><td>all_missing</td><td>True</td><td>7</td><td>2.160224676132202</td></tr>
+<tr><td>X16</td><td>anatom_site_general</td><td>True</td><td>7</td><td>0.320465087890625</td></tr>
+<tr><td>X16</td><td>sex</td><td>True</td><td>7</td><td>0.7537832260131836</td></tr>
+</tbody></table></div>
+<p class="note">Exact saved CSV fields and values (unrounded). Probability and classification rates are fractions unless the source field explicitly specifies another unit. Blank values are retained.</p></section>
+<section><h2>Table S 14. Xai occlusion summary</h2>
+<div class="scroll"><table><thead><tr><th scope="col">intervention</th><th scope="col">n</th><th scope="col">mean_target_logit_drop</th><th scope="col">top_greater_count</th></tr></thead><tbody><tr><td>bottom4</td><td>16</td><td>-0.20073328912258148</td><td>16</td></tr>
+<tr><td>fixed_random4</td><td>16</td><td>0.618655152618885</td><td>15</td></tr>
+<tr><td>top4</td><td>16</td><td>1.7370660603046417</td><td></td></tr>
+</tbody></table></div>
+<p class="note">Exact saved CSV fields and values (unrounded). Probability and classification rates are fractions unless the source field explicitly specifies another unit. Blank values are retained.</p></section>
+<section><h2>Table S 15. Xai metadata summary</h2>
+<div class="scroll"><table><thead><tr><th scope="col">field</th><th scope="col">mean_target_logit_drop</th><th scope="col">n</th></tr></thead><tbody><tr><td>age_approx</td><td>0.9721372872591019</td><td>16</td></tr>
+<tr><td>all_missing</td><td>2.458298124372959</td><td>16</td></tr>
+<tr><td>anatom_site_general</td><td>1.0928539335727692</td><td>16</td></tr>
+<tr><td>sex</td><td>0.8468879796564579</td><td>16</td></tr>
+</tbody></table></div>
+<p class="note">Exact saved CSV fields and values (unrounded). Probability and classification rates are fractions unless the source field explicitly specifies another unit. Blank values are retained.</p></section>
+<section><h2>Table S 16. Reserved calibration bins</h2>
+<div class="scroll"><table><thead><tr><th scope="col">arm</th><th scope="col">bin</th><th scope="col">count</th><th scope="col">mean_confidence</th><th scope="col">observed_accuracy</th></tr></thead><tbody><tr><td>H0</td><td>0</td><td>0</td><td></td><td></td></tr>
+<tr><td>H0</td><td>1</td><td>0</td><td></td><td></td></tr>
+<tr><td>H0</td><td>2</td><td>3</td><td>0.19562429756497032</td><td>0.3333333333333333</td></tr>
+<tr><td>H0</td><td>3</td><td>15</td><td>0.23525520235043387</td><td>0.3333333333333333</td></tr>
+<tr><td>H0</td><td>4</td><td>101</td><td>0.30066395951858393</td><td>0.2376237623762376</td></tr>
+<tr><td>H0</td><td>5</td><td>170</td><td>0.37001855667633654</td><td>0.3</td></tr>
+<tr><td>H0</td><td>6</td><td>253</td><td>0.43402538718218636</td><td>0.32806324110671936</td></tr>
+<tr><td>H0</td><td>7</td><td>298</td><td>0.5008920017751235</td><td>0.40604026845637586</td></tr>
+<tr><td>H0</td><td>8</td><td>257</td><td>0.5671787195286414</td><td>0.5252918287937743</td></tr>
+<tr><td>H0</td><td>9</td><td>217</td><td>0.6348841563238637</td><td>0.5299539170506913</td></tr>
+<tr><td>H0</td><td>10</td><td>218</td><td>0.7004725935928624</td><td>0.6192660550458715</td></tr>
+<tr><td>H0</td><td>11</td><td>212</td><td>0.767146933084774</td><td>0.6698113207547169</td></tr>
+<tr><td>H0</td><td>12</td><td>244</td><td>0.8351136295308551</td><td>0.7868852459016393</td></tr>
+<tr><td>H0</td><td>13</td><td>263</td><td>0.9012977695019815</td><td>0.8212927756653993</td></tr>
+<tr><td>H0</td><td>14</td><td>327</td><td>0.9644126421253597</td><td>0.9051987767584098</td></tr>
+<tr><td>H1</td><td>0</td><td>0</td><td></td><td></td></tr>
+<tr><td>H1</td><td>1</td><td>0</td><td></td><td></td></tr>
+<tr><td>H1</td><td>2</td><td>1</td><td>0.17730055194786404</td><td>0.0</td></tr>
+<tr><td>H1</td><td>3</td><td>12</td><td>0.2486788361367038</td><td>0.08333333333333333</td></tr>
+<tr><td>H1</td><td>4</td><td>55</td><td>0.3043135190142197</td><td>0.23636363636363636</td></tr>
+<tr><td>H1</td><td>5</td><td>135</td><td>0.36636128658645273</td><td>0.3037037037037037</td></tr>
+<tr><td>H1</td><td>6</td><td>175</td><td>0.4333604020088584</td><td>0.3142857142857143</td></tr>
+<tr><td>H1</td><td>7</td><td>235</td><td>0.4987739243440749</td><td>0.39148936170212767</td></tr>
+<tr><td>H1</td><td>8</td><td>253</td><td>0.566054547194427</td><td>0.47035573122529645</td></tr>
+<tr><td>H1</td><td>9</td><td>197</td><td>0.6325439372280192</td><td>0.45685279187817257</td></tr>
+<tr><td>H1</td><td>10</td><td>200</td><td>0.7010216131432364</td><td>0.58</td></tr>
+<tr><td>H1</td><td>11</td><td>198</td><td>0.7635198954622493</td><td>0.6313131313131313</td></tr>
+<tr><td>H1</td><td>12</td><td>231</td><td>0.834000786213658</td><td>0.683982683982684</td></tr>
+<tr><td>H1</td><td>13</td><td>284</td><td>0.9029580866970848</td><td>0.7570422535211268</td></tr>
+<tr><td>H1</td><td>14</td><td>602</td><td>0.9743794410567024</td><td>0.8853820598006644</td></tr>
+<tr><td>H2</td><td>0</td><td>0</td><td></td><td></td></tr>
+<tr><td>H2</td><td>1</td><td>0</td><td></td><td></td></tr>
+<tr><td>H2</td><td>2</td><td>1</td><td>0.19848507306026736</td><td>0.0</td></tr>
+<tr><td>H2</td><td>3</td><td>13</td><td>0.2459711656936164</td><td>0.15384615384615385</td></tr>
+<tr><td>H2</td><td>4</td><td>60</td><td>0.3084319617647333</td><td>0.2</td></tr>
+<tr><td>H2</td><td>5</td><td>112</td><td>0.3673684346144074</td><td>0.29464285714285715</td></tr>
+<tr><td>H2</td><td>6</td><td>187</td><td>0.43737343858879096</td><td>0.37967914438502676</td></tr>
+<tr><td>H2</td><td>7</td><td>225</td><td>0.49864242345111526</td><td>0.39111111111111113</td></tr>
+<tr><td>H2</td><td>8</td><td>239</td><td>0.5652876018862558</td><td>0.4435146443514644</td></tr>
+<tr><td>H2</td><td>9</td><td>214</td><td>0.6307821615776489</td><td>0.5093457943925234</td></tr>
+<tr><td>H2</td><td>10</td><td>211</td><td>0.701569671379123</td><td>0.5829383886255924</td></tr>
+<tr><td>H2</td><td>11</td><td>201</td><td>0.7662696553376107</td><td>0.6417910447761194</td></tr>
+<tr><td>H2</td><td>12</td><td>227</td><td>0.8337628615587362</td><td>0.6696035242290749</td></tr>
+<tr><td>H2</td><td>13</td><td>301</td><td>0.9021297484572046</td><td>0.7375415282392026</td></tr>
+<tr><td>H2</td><td>14</td><td>587</td><td>0.9745797751413257</td><td>0.899488926746167</td></tr>
+<tr><td>H3</td><td>0</td><td>0</td><td></td><td></td></tr>
+<tr><td>H3</td><td>1</td><td>0</td><td></td><td></td></tr>
+<tr><td>H3</td><td>2</td><td>0</td><td></td><td></td></tr>
+<tr><td>H3</td><td>3</td><td>8</td><td>0.2499922796406327</td><td>0.25</td></tr>
+<tr><td>H3</td><td>4</td><td>60</td><td>0.3005237176284263</td><td>0.31666666666666665</td></tr>
+<tr><td>H3</td><td>5</td><td>101</td><td>0.3700837927348255</td><td>0.3465346534653465</td></tr>
+<tr><td>H3</td><td>6</td><td>160</td><td>0.4346485733950166</td><td>0.35</td></tr>
+<tr><td>H3</td><td>7</td><td>202</td><td>0.5020636669334522</td><td>0.47029702970297027</td></tr>
+<tr><td>H3</td><td>8</td><td>239</td><td>0.5685824991894122</td><td>0.401673640167364</td></tr>
+<tr><td>H3</td><td>9</td><td>204</td><td>0.633560979880014</td><td>0.5</td></tr>
+<tr><td>H3</td><td>10</td><td>214</td><td>0.6995685419621456</td><td>0.5841121495327103</td></tr>
+<tr><td>H3</td><td>11</td><td>234</td><td>0.7689785812082625</td><td>0.5982905982905983</td></tr>
+<tr><td>H3</td><td>12</td><td>232</td><td>0.8320826902424167</td><td>0.6293103448275862</td></tr>
+<tr><td>H3</td><td>13</td><td>296</td><td>0.900280367428353</td><td>0.75</td></tr>
+<tr><td>H3</td><td>14</td><td>628</td><td>0.9754316270725015</td><td>0.8837579617834395</td></tr>
+<tr><td>H4</td><td>0</td><td>0</td><td></td><td></td></tr>
+<tr><td>H4</td><td>1</td><td>0</td><td></td><td></td></tr>
+<tr><td>H4</td><td>2</td><td>0</td><td></td><td></td></tr>
+<tr><td>H4</td><td>3</td><td>9</td><td>0.2522882123069532</td><td>0.1111111111111111</td></tr>
+<tr><td>H4</td><td>4</td><td>60</td><td>0.3038577868080745</td><td>0.4</td></tr>
+<tr><td>H4</td><td>5</td><td>96</td><td>0.3682769399632515</td><td>0.23958333333333334</td></tr>
+<tr><td>H4</td><td>6</td><td>179</td><td>0.43543407887408947</td><td>0.3575418994413408</td></tr>
+<tr><td>H4</td><td>7</td><td>245</td><td>0.5005211335743144</td><td>0.42448979591836733</td></tr>
+<tr><td>H4</td><td>8</td><td>205</td><td>0.5705560250642604</td><td>0.44878048780487806</td></tr>
+<tr><td>H4</td><td>9</td><td>198</td><td>0.6352661648989578</td><td>0.4797979797979798</td></tr>
+<tr><td>H4</td><td>10</td><td>239</td><td>0.7009608434093708</td><td>0.5481171548117155</td></tr>
+<tr><td>H4</td><td>11</td><td>222</td><td>0.7669597264656365</td><td>0.581081081081081</td></tr>
+<tr><td>H4</td><td>12</td><td>242</td><td>0.836776029737434</td><td>0.6735537190082644</td></tr>
+<tr><td>H4</td><td>13</td><td>262</td><td>0.9033699165073241</td><td>0.7633587786259542</td></tr>
+<tr><td>H4</td><td>14</td><td>621</td><td>0.9743348988993772</td><td>0.8792270531400966</td></tr>
+</tbody></table></div>
+<p class="note">Exact saved CSV fields and values (unrounded). Probability and classification rates are fractions unless the source field explicitly specifies another unit. Blank values are retained.</p></section>
+<section><h2>Table S 17. Class support</h2>
+<div class="scroll"><table><thead><tr><th scope="col">class</th><th scope="col">images</th><th scope="col">groups</th></tr></thead><tbody><tr><td>AK</td><td>129</td><td>48</td></tr>
+<tr><td>BCC</td><td>580</td><td>196</td></tr>
+<tr><td>BKL</td><td>241</td><td>70</td></tr>
+<tr><td>DF</td><td>29</td><td>8</td></tr>
+<tr><td>MEL</td><td>632</td><td>105</td></tr>
+<tr><td>NV</td><td>842</td><td>255</td></tr>
+<tr><td>SCC</td><td>94</td><td>25</td></tr>
+<tr><td>VASC</td><td>31</td><td>8</td></tr>
+</tbody></table></div>
+<p class="note">Exact saved CSV fields and values (unrounded). Probability and classification rates are fractions unless the source field explicitly specifies another unit. Blank values are retained.</p></section>
+<section><h2>Table S 18. Reserved metadata coverage</h2>
+<div class="scroll"><table><thead><tr><th scope="col">field</th><th scope="col">observed_rows</th><th scope="col">missing_rows</th></tr></thead><tbody><tr><td>age_approx</td><td>2558</td><td>20</td></tr>
+<tr><td>anatom_site_general</td><td>2551</td><td>27</td></tr>
+<tr><td>sex</td><td>2558</td><td>20</td></tr>
+</tbody></table></div>
+<p class="note">Exact saved CSV fields and values (unrounded). Probability and classification rates are fractions unless the source field explicitly specifies another unit. Blank values are retained.</p></section>
+</body></html>

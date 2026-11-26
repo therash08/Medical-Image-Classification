@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Uncalibrated probability performance under natural metadata availability}
+\label{tab:13-calibration}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{llll}
+\toprule
+\textbf{Arm} & \textbf{ECE (15 bins)} & \textbf{Multiclass Brier sum} & \textbf{Negative log-likelihood} \\
+\midrule
+H0 & 0.0773 & 0.5465 & 1.1514 \\
+H1 & 0.1161 & 0.5375 & 1.1461 \\
+H2 & 0.1113 & 0.5348 & 1.1435 \\
+H3 & 0.1180 & 0.5411 & 1.1750 \\
+H4 & 0.1244 & 0.5451 & 1.1791 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\par\smallskip
+\begin{minipage}{\textwidth}\footnotesize Lower values are better. Point estimates from saved probabilities; no post-hoc calibration or threshold fitting.\end{minipage}
+\end{table*}

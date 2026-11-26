@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Natural-condition performance with paired group-bootstrap uncertainty}
+\label{tab:06-reserved-uncertainty}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lllll}
+\toprule
+\textbf{Arm} & \textbf{Accuracy (\%)} & \textbf{95\% CI} & \textbf{Macro-F1 (\%)} & \textbf{95\% CI} \\
+\midrule
+H0 & 58.81 & [55.50, 62.02] & 40.59 & [36.78, 44.68] \\
+H1 & 60.43 & [57.08, 63.67] & 40.30 & [36.39, 44.32] \\
+H2 & 61.09 & [57.80, 64.30] & 40.07 & [36.58, 43.64] \\
+H3 & 61.79 & [58.47, 65.02] & 41.65 & [37.71, 45.75] \\
+H4 & 60.98 & [57.68, 64.19] & 41.71 & [37.61, 45.93] \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\par\smallskip
+\begin{minipage}{\textwidth}\footnotesize Descriptive 95\% percentile intervals, 10,000 saved class-stratified group-bootstrap draws. These are not the multiplicity-adjusted primary contrast intervals.\end{minipage}
+\end{table*}

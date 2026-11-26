@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Controlled architectural comparison}
+\label{tab:03-ablation-design}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{llllll}
+\toprule
+\textbf{Arm} & \textbf{Architecture} & \textbf{Clinical inputs} & \textbf{GATv2} & \textbf{Adaptive mechanism} & \textbf{Head parameters} \\
+\midrule
+H0 & Image-only & No & No & No & 126,856 \\
+H1 & Non-graph multimodal & Yes & No & No & 195,665 \\
+H2 & Non-adaptive GATv2 & Yes & Yes & No & 195,665 \\
+H3 & Adaptive GATv2 (proposed) & Yes & Yes & Yes & 195,665 \\
+H4 & Adaptive non-graph control & Yes & No & Yes & 195,665 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\par\smallskip
+\begin{minipage}{\textwidth}\footnotesize All arms use the frozen 1,440-dimensional Swin-T feature representation and the same four-epoch final training budget. Counts are trainable head parameters, not full-backbone counts.\end{minipage}
+\end{table*}

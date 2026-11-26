@@ -1,0 +1,24 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Proposed H3: per-class reserved-test performance}
+\label{tab:07-h3-per-class}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lllllll}
+\toprule
+\textbf{Class} & \textbf{Images} & \textbf{Precision (\%)} & \textbf{Recall (\%)} & \textbf{Specificity (\%)} & \textbf{F1 (\%)} & \textbf{ROC-AUC} \\
+\midrule
+AK & 129 & 27.61 & 28.68 & 96.04 & 28.14 & 0.8591 \\
+BCC & 580 & 69.08 & 62.41 & 91.89 & 65.58 & 0.9040 \\
+BKL & 241 & 36.79 & 29.46 & 94.78 & 32.72 & 0.7764 \\
+DF & 29 & 11.36 & 17.24 & 98.47 & 13.70 & 0.7893 \\
+MEL & 632 & 70.66 & 68.99 & 90.70 & 69.82 & 0.8822 \\
+NV & 842 & 72.59 & 75.18 & 86.23 & 73.86 & 0.9019 \\
+SCC & 94 & 29.33 & 46.81 & 95.73 & 36.07 & 0.8814 \\
+VASC & 31 & 11.36 & 16.13 & 98.47 & 13.33 & 0.8797 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\par\smallskip
+\begin{minipage}{\textwidth}\footnotesize Sensitivity equals recall. AUC is one-vs-rest (0--1). Point estimates only; small class supports limit interpretation.\end{minipage}
+\end{table*}

@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Exploratory image-occlusion faithfulness on development examples}
+\label{tab:10-xai-occlusion}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{llll}
+\toprule
+\textbf{Intervention} & \textbf{Cases} & \textbf{Mean target-logit drop} & \textbf{Top \textgreater{} comparator (cases)} \\
+\midrule
+Top-ranked 4 tiles & 16 & 1.7371 & N/A \\
+Fixed random 4 tiles & 16 & 0.6187 & 15 \\
+Bottom-ranked 4 tiles & 16 & -0.2007 & 16 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\par\smallskip
+\begin{minipage}{\textwidth}\footnotesize Sixteen class-stratified training examples, one per group. Positive drop means the original predicted-class logit decreased after deletion. This is not independent clinical explanation validation.\end{minipage}
+\end{table*}
